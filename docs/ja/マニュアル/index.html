@@ -13,7 +13,7 @@
         <meta name="author" content="Kenji Asaba">
       
       
-        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/MocapForAll-Manual/%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/">
+        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/testmkdoc/%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/">
       
       <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#mocapforall" class="md-skip">
           Skip to content
         </a>
       
@@ -314,9 +314,109 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          マニュアル
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         マニュアル
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    万人のためのモーションキャプチャシステム
+  </a>
+  
+    <nav class="md-nav" aria-label="万人のためのモーションキャプチャシステム">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    特別な装置不要
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pc" class="md-nav__link">
+    ミドルクラスのPCでリアルタイム
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    安い
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mocapforall_1" class="md-nav__link">
+    MocapForAllでできること
+  </a>
+  
+    <nav class="md-nav" aria-label="MocapForAllでできること">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-motion-trackersteamvr" class="md-nav__link">
+    Virtual Motion TrackerによるSteamVR連携
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ue4-ue5-unity" class="md-nav__link">
+    UE4, UE5, Unityへのデータ連携
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vmc" class="md-nav__link">
+    VMCプロトコルによるアプリ連携
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bvh" class="md-nav__link">
+    BVH形式での書き出し
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -337,51 +437,10 @@
                 
                 <p>(<a href="#mocapforallのインストール方法">インストール方法</a> と <a href="#使い方１モーションキャプチャするための準備編">使い方１：モーションキャプチャするための準備編</a> の部分をカバーするクイックスタートガイド)  </p>
 <p><a href="http://www.youtube.com/watch?v=SP72wWWFcHU"><img alt="Quick start guide at youtube" src="http://img.youtube.com/vi/SP72wWWFcHU/0.jpg" /></a></p>
-<h1 id="_1">目次</h1>
-<ul>
-<li>
-<p><a href="#mocapforallって何？">MocapForAllって何？</a></p>
-</li>
-<li>
-<p><a href="#mocapforallのインストール方法">MocapForAllのインストール方法</a></p>
-</li>
-<li>
-<p><a href="#使い方１モーションキャプチャするための準備編">使い方１：モーションキャプチャするための準備編</a></p>
-</li>
-<li>
-<p><a href="#カメラの用意">カメラの用意</a></p>
-</li>
-<li><a href="#カメラ校正">カメラ校正</a></li>
-<li>
-<p><a href="#アプリ上での調整">アプリ上での調整</a></p>
-</li>
-<li>
-<p><a href="#使い方２キャプチャしたモーションの利用編">使い方２：キャプチャしたモーションの利用編</a></p>
-</li>
-<li><a href="#vmtによるsteamvr連携">VMTによるSteamVR連携</a></li>
-<li><a href="#vmcプロトコルによるアプリ連携-1">VMCプロトコルによるアプリ連携</a></li>
-<li><a href="#bvh形式での書き出し">BVH形式での書き出し</a></li>
-<li><a href="#ue4-ue5-unityへのデータ連携具体例">UE4, UE5, Unityへのデータ連携具体例</a></li>
-<li>
-<p><a href="#共有メモリへの書き出し">共有メモリへの書き出し</a></p>
-</li>
-<li>
-<p><a href="#使い方３その他の設定編">使い方３：その他の設定編</a></p>
-</li>
-<li>
-<p><a href="#faq">FAQ</a></p>
-</li>
-<li>
-<p><a href="#既知のバグ">既知のバグ</a></p>
-</li>
-<li>
-<p><a href="#謝辞">謝辞</a></p>
-</li>
-</ul>
 <h1 id="mocapforall">MocapForAllって何？</h1>
-<h2 id="_2">万人のためのモーションキャプチャシステム</h2>
-<p><img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif" alt="App-Demo" style="zoom:80%;" /></p>
-<h3 id="_3">特別な装置不要</h3>
+<h2 id="_1">万人のためのモーションキャプチャシステム</h2>
+<p><img alt="App-Demo.gif" loading="lazy" src="../images/App-Demo.gif" /></p>
+<h3 id="_2">特別な装置不要</h3>
 <p>下記のものがあれば、人の動きをキャプチャすることができます。</p>
 <ul>
 <li>ミドルクラスのPC</li>
@@ -391,7 +450,7 @@
 <p>ウェブカメラはウェブ会議で使用するような一般的なものを使用できます。またスマートフォンやタブレットをウェブカメラ化するアプリを利用することもできます。</p>
 <h3 id="pc">ミドルクラスのPCでリアルタイム</h3>
 <p>例えば、専用のGPUを持たない Surface Pro 7 で 17fps前後、GTX1080Ti なら 30～60fpsで動作させることができます。</p>
-<h3 id="_4">安い</h3>
+<h3 id="_3">安い</h3>
 <p>予算が限られているインディーズでの製作活動、教育目的や社内での利用などに選択肢として加えることができます。   </p>
 <h2 id="mocapforall_1">MocapForAllでできること</h2>
 <ul>
@@ -427,8 +486,8 @@
 <h3 id="bvh">BVH形式での書き出し</h3>
 <p>BVH形式ファイルでキャプチャ結果を保存することができます。Blender等で利用できます。</p>
 <h1 id="mocapforall_2">MocapForAllのインストール方法</h1>
-<h2 id="_5">ダウンロード方法</h2>
-<h3 id="_6">無料試用版</h3>
+<h2 id="_4">ダウンロード方法</h2>
+<h3 id="_5">無料試用版</h3>
 <p><a href="https://akiya-souken.booth.pm/items/3026474">BOOTH</a>および<a href="https://store.steampowered.com/app/1759710/MocapForAll/">Steam</a>にて無料体験版を配布しています。  </p>
 <p>有料版の購入には、無料版の試用が条件となります。購入をご検討の方は、まずはこちらをダウンロードして動作確認を行ってください。<br />
 無料版では、キャプチャ結果を外部にエクスポートする機能に制限が設けられています。</p>
@@ -436,7 +495,7 @@
 <li>VMTプロトコル、VMCプロトコル、共有メモリへのデータ出力は、10秒ごとに送信の停止・再開が繰り返されます</li>
 <li>BVHファイルは、300フレームまでに制限されます</li>
 </ul>
-<h3 id="_7">有料版</h3>
+<h3 id="_6">有料版</h3>
 <h4 id="booth">BOOTHでの購入</h4>
 <p>購入前に、無料試用版でソフトウェアがお客様の環境で問題なく動作することを必ずご確認ください。<br />
 購入前に下記URLへお進みいただき、利用規約を必ずご確認ください。<br />
@@ -449,14 +508,14 @@ https://vrlab.akiya-souken.co.jp/product#buy</p>
 https://store.steampowered.com//eula/1759710_eula_0</p>
 <h2 id="booth_1">BOOTHからのインストール方法</h2>
 <p><a href="#手動でのインストール">手動でのインストール</a>と、<a href="#ネットーワークインストーラでのインストール">ネットーワークインストーラでのインストール</a>の二つの方法があります。</p>
-<h3 id="_8">手動でのインストール</h3>
-<h4 id="_9">本体</h4>
+<h3 id="_7">手動でのインストール</h3>
+<h4 id="_8">本体</h4>
 <ol>
 <li>「MocapForAll_Full_vN.N.N.zip」をダウンロードして展開（解凍）します。  </li>
 <li>「MocapForAll_Full_vN.N.N」フォルダでMocapForAll.exeを実行します。  </li>
 <li>「UE4 Prerequisites」のインストール画面が表示された場合は、インストールしてください。  </li>
 </ol>
-<h4 id="_10">付録（省略可）</h4>
+<h4 id="_9">付録（省略可）</h4>
 <p>Appendixに付属の機能が不要な場合はこの手順はスキップしてください。
 Appendixは下記の4種類があります。</p>
 <ul>
@@ -535,7 +594,7 @@ RTX2080Tiを使っている場合は、cuDNN v8.0.5を使う必要があるか�
 
 </details>
 
-<h3 id="_11">ネットーワークインストーラでのインストール</h3>
+<h3 id="_10">ネットーワークインストーラでのインストール</h3>
 <ol>
 <li>
 <p>「Network_Installer_-_MocapForAll_Full_vN.N.N.zip」をダウンロードして解凍します。</p>
@@ -557,12 +616,12 @@ RTX2080Tiを使っている場合は、cuDNN v8.0.5を使う必要があるか�
 </li>
 </ol>
 <h2 id="booth_2">BOOTHからのアップデート方法</h2>
-<h3 id="_12">手動でのアップデート</h3>
+<h3 id="_11">手動でのアップデート</h3>
 <ol>
 <li>「MocapForAll_Full_vN.N.N.zip」をダウンロードして展開（解凍）します。  </li>
 <li>「MocapForAll_Full_vN.N.N」で、古いバージョンの「MocapForAll_Full_vM.M.M」を上書きします。</li>
 </ol>
-<h3 id="_13">ネットーワークインストーラでのアップデート</h3>
+<h3 id="_12">ネットーワークインストーラでのアップデート</h3>
 <p>インストール時と同じです。</p>
 <p>ただし、ダウンロードするデータ量を削減したい場合は、インストーラの「Select Components」画面でAppendixは特に選択せず「Main Files」のみを選択し、インストールを実行します。<br />
 インストーラではファイルの削除は行わないので、以前のAppendixは残っている状態です。<br />
@@ -572,10 +631,10 @@ RTX2080Tiを使っている場合は、cuDNN v8.0.5を使う必要があるか�
 すべての<a href="#付録省略可">付録</a>が自動的にインストールされます。
 TensorRTによるGPUアクセラレーションを使用するには、手動で<a href="#tensorrtのインストール">CUDA、cuDNN、およびTensorRTをインストール</a>する必要があります。</p>
 <h1 id="1">使い方１：モーションキャプチャするための準備編</h1>
-<h2 id="_14">カメラの用意</h2>
+<h2 id="_13">カメラの用意</h2>
 <p>MocapForAllがインストールされたPCに接続可能なWEBカメラやスマートフォンをご用意ください。<br />
 スマートフォンを使用する場合は<a href="https://www.dev47apps.com/">DroidCam</a>や<a href="https://iriun.com/">Iriun</a>など、スマートフォンをPCのWebカメラとして利用できるアプリをご利用ください。  </p>
-<h3 id="_15">どんなカメラがいいの？</h3>
+<h3 id="_14">どんなカメラがいいの？</h3>
 <h4 id="or">ウェブカメラ or スマホ</h4>
 <p>ウェブカメラとスマートフォンどちらがより精度が高い等のデータはありません。お手元の機材を実際に接続して確認するのが一番です。<br />
 スマートフォンなどのバッテリー駆動の機材を使用する際は、バッテリー切れにご注意ください。<br />
@@ -584,14 +643,14 @@ TensorRTによるGPUアクセラレーションを使用するには、手動で
 <p>MocapForAllのキャプチャ結果は、現実の人の動きに対して遅延します。その遅延の大部分は、カメラ画像がPCに転送されるのに要する時間です。<br />
 有線カメラの方が無線カメラより遅延が小さいことが多いです。また、スマートフォンをWebカメラ化するアプリや仮想カメラを使用すると、遅延が大きくなる傾向にあることに注意してください。<br />
 VR機器と組み合わせて使用する場合、遅延ができるだけ小さくなるように構成するのがおすすめです。</p>
-<h4 id="_16">視野角、フレームレート、画像サイズ</h4>
+<h4 id="_15">視野角、フレームレート、画像サイズ</h4>
 <p>それぞれ推奨値は設けておりませんが、参考までに以下をご確認ください。<br />
 - <strong>視野角</strong>は広い方がモーションキャプチャできる空間を広く確保できます。しかし、MocapForAllではシンプルなピンホールカメラモデルで三次元位置を計算しているため、魚眼レンズのように画像に歪みが生じると動きを正しくキャプチャできません。歪みが少なく、視野角の大きいカメラが最も適しているといえます。参考までに、例えば視野角120°のウェブカメラで適切に動作しているという報告がいくつか上がっています。 <br />
 - <strong>フレームレート</strong>が低い場合、その値がキャプチャ結果のフレームレートのボトルネックとなり得ます。使用するPCの性能を勘案した上で、ご自身が目標とされるキャプチャ結果のフレームレート以上のカメラをご用意ください。なお、MocapForAll自体の処理能力は、例えばGTX1080Tiを使う場合、MocapForAll単独で動作させて60fps、VRと同時に使用して20fps程度が目安です。 <br />
 - <strong>画像サイズ</strong>は、体の動きのキャプチャの精度にはあまり寄与しません。640x480ピクセル程度で十分です。というのも、内部の処理で、人のいる領域の画像を切り抜いたあと256x256ピクセル等に縮小してAIへのインプットとしているためです。ただし、手や顔のキャプチャも行う場合は、同様の処理を手や顔という小さな領域に対して行うため、画像サイズ（と解像度）が大きい方が精度が向上します。私たちは通常HD程度の画像サイズのカメラを使用しています。</p>
-<h3 id="_17">どんなカメラ配置がいいの？</h3>
+<h3 id="_16">どんなカメラ配置がいいの？</h3>
 <p>下記を踏まえた上で、最低2台のカメラに同時に全身が映る位置へカメラを設置する必要があります。  </p>
-<h4 id="_18">垂直方向：胸～目線の高さ</h4>
+<h4 id="_17">垂直方向：胸～目線の高さ</h4>
 <p>カメラを設置する高さはキャプチャ対象の胸～目線の高さをおすすめします。<br />
 極端に見上げる・見下げる設置となる場合キャプチャの精度が下がる傾向があります。   </p>
 <h4 id="45">水平方向：正面左右45° + α</h4>
@@ -599,31 +658,31 @@ VR機器と組み合わせて使用する場合、遅延ができるだけ小さ
 キャプチャ対象と2つのカメラが一直線上に位置してしまうと奥行方向の情報が不足し精度が下がる傾向があります。<br />
 参考として我々が設置しているカメラの位置をご紹介します。<br />
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Placing.png" alt="カメラの設置位置" style="zoom: 50%;" />  </p>
-<h4 id="_19">カメラ台数と精度、負荷</h4>
+<h4 id="_18">カメラ台数と精度、負荷</h4>
 <p>カメラの台数を増やすことでキャプチャ対象の死角が減るため、精度（というより正確度）の向上が期待できます。しかしこれについての定量的なデータはありません。<br />
 カメラ台数にほぼ比例してPCへの負荷も上昇するため、カメラを増やすとPCのスペックによってはキャプチャ結果のフレームレートが低下します。<br />
 まずはカメラ2台での運用から始め、死角によって問題が生じることがわかった場合にカメラの追加を検討することをおすすめします。  </p>
 <p>（参考）<br />
 <a href="https://twitter.com/i/status/1397023364623998977">椅子に座っている人のキャプチャ-カメラ2台でのキャプチャ結果</a><br />
 <a href="https://twitter.com/i/status/1397121208257110019">椅子に座っている人のキャプチャ-カメラ4台でのキャプチャ結果</a>  </p>
-<h2 id="_20">カメラ校正</h2>
-<h3 id="_21">カメラ校正とは？</h3>
+<h2 id="_19">カメラ校正</h2>
+<h3 id="_20">カメラ校正とは？</h3>
 <p>カメラ校正は、カメラ画像中での位置と現実世界での位置を対応付けるための情報を取得する作業です。この節では、カメラ校正で何をやっているのかの概念といくつかの注意点を説明します。  </p>
 <p>MocapForAllのカメラ校正では、下記の二つの情報を取得します。</p>
 <ul>
 <li>内部パラメータ（カメラ自体の特徴）</li>
 <li>外部パラメータ（カメラの実世界での位置）</li>
 </ul>
-<h4 id="_22">内部パラメータとは</h4>
+<h4 id="_21">内部パラメータとは</h4>
 <p>カメラのレンズの焦点距離 <em>f</em> および光軸の位置 <em>Cx, Cy</em> といった、<strong>カメラそれ自体の特徴</strong>を表す情報です。<br />
 これはカメラ（とレンズ)に固有のもので、基本的に変化しません。そのため、<strong>一度正しく取得すればそれ以降は再取得は不要</strong>になります。<br />
 数学的には、「カメラ画像中の座標」と「カメラ座標系での座標」の関係を記述する行列で表されます。アプリ画面上に表示されているのはこの値です。<br />
 <img alt="Camera-Calibration-Intrinsic-Equation" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Equation.png" />  </p>
 <p><img alt="Camera-Calibration-Intrinsic-Geometry" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Geometry.png" />  </p>
-<h5 id="_23">オートフォーカスについての注意</h5>
+<h5 id="_22">オートフォーカスについての注意</h5>
 <p>オートフォーカスが入っているカメラは、フォーカスが変化すると焦点距離が変わってしまうため、内部パラメータも変わってしまうことに注意してください。<br />
 経験的には、一般的な携帯電話のレベルのオートフォーカスではいちいち内部パラメータの再取得をせずとも問題になることはないですが、もし高い精度が出ない場合はカメラのオートフォーカスを疑う必要があるかもしれません。  </p>
-<h4 id="_24">外部パラメータとは</h4>
+<h4 id="_23">外部パラメータとは</h4>
 <p>カメラが現実世界のどこにあってどういう向きを向いているかという、<strong>カメラの実世界での位置</strong>を表す情報です。<br />
 原理的には、カメラを部屋の中で完全に固定してしまえば変化しないものとして扱うことができますが、カメラを固定したつもりでも<strong>時間の経過とともに少しずつずれてしまったりするので、基本的には使用開始時に毎回再取得</strong>することをお勧めします。<br />
 数学的には、「カメラ座標系での座標」と「世界座標系での座標」の関係を記述する行列で表されます。アプリ画面上に表示されているのはこの値です。</p>
@@ -675,12 +734,12 @@ VR機器と組み合わせて使用する場合、遅延ができるだけ小さ
 <h3 id="1ar">カメラ校正の準備1：ARマーカの印刷</h3>
 <p>カメラ校正を行うためには、「位置がわかっている現実世界の座標がカメラ画像上でどこにあるか」を知る必要があります。そこで、下記に述べる「特定の画像」を実際に使うカメラで撮影してもらい、その撮影結果から上述のカメラの情報をアプリ側で算出する、ということを行います。<br />
 この節では、カメラ校正の準備として、これらの画像を印刷していきます。</p>
-<h4 id="_25">内部パラメータの取得で使う画像の印刷</h4>
+<h4 id="_24">内部パラメータの取得で使う画像の印刷</h4>
 <p><a href="https://raw.githubusercontent.com/Akiya-Research-Institute/MocapForAll-Wiki/main/resources/calibration/IntrinsicCalibration.png">この画像</a>を使います。<br />
 まだカメラを部屋の中で固定していない場合は、印刷は不要です。この画像をPCのディスプレイに表示して使います。<br />
 すでにカメラを固定済みの場合は、上記の画像をA4程度の大きさで印刷してください。大きさは厳密である必要はありません。ダンボールなどに貼り付けて平面の状態を保てるようにしておいてください。<br />
 <img alt="Camera-Calibration-Intrinsic-Marker" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Marker.jpg" />  </p>
-<h4 id="_26">外部パラメータの取得で使う画像の印刷</h4>
+<h4 id="_25">外部パラメータの取得で使う画像の印刷</h4>
 <p>先に説明した<a href="#外部パラメータの取得の4つの方式">外部パラメータの取得の4つの方式</a>により、使用する画像が異なります。</p>
 <ol>
 <li>ChArUcoボードを使うやり方<br />
@@ -722,7 +781,7 @@ VR機器と組み合わせて使用する場合、遅延ができるだけ小さ
 自身の身長を測ります。計測結果をMocapForAllの「Settings &gt; Calibration &gt; Maker size (affects to coord. scale) &gt; <strong>Human hight</strong> [m]」に入力します。単位はメートルです。</p>
 </li>
 </ol>
-<h3 id="_27">カメラの接続</h3>
+<h3 id="_26">カメラの接続</h3>
 <p>少なくとも2台のカメラをPCに接続します。<br />
 MocapForAllのウィンドウ上部の「Add camera」ボタンを使用するカメラの数だけクリックします。<br />
 「Camera:」の横のプルダウンボックスを選択し、接続したカメラを探します。 <br />
@@ -731,7 +790,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 カメラの画像サイズの変更に失敗することがありますが、その場合はカメラを閉じてから少し待って、再度お試しください。</p>
 <p>画像の左右反転ができます。一部のカメラはデフォルトで画像が鏡像になっていることに注意してください。画像が鏡像になっているとARマーカが読み込めません。</p>
 <p>画像の回転ができます。キャプチャ開始時点は人が真っすぐ立っている画像でなければ認識できないので、カメラの設置状況に合わせて画像を適切に回転しておいてください。</p>
-<h4 id="_28">カメラ制御フレームワークの選択</h4>
+<h4 id="_27">カメラ制御フレームワークの選択</h4>
 <p>MocapForAllのウィンドウ上部の「Add camera」の横の「▼」を押すと、カメラの制御に使うフレームワークを選択できます。    </p>
 <p><img alt="Camera-Add-Framework" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Add-Framework.png" /></p>
 <ul>
@@ -740,14 +799,15 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <li><strong>Recorded video</strong>: カメラの代わりに録画済みの動画を使用します。詳細は、<a href="#録画した動画からモーションキャプチャする">録画した動画からモーションキャプチャする</a>を参照してください。</li>
 </ul>
 <p>UE4 media playerで動作するカメラならば、そちらがおすすめです。動作しない場合はDirect Showを使いましょう。</p>
-<h3 id="_29">内部パラメータのカメラ校正手順</h3>
+<h3 id="_28">内部パラメータのカメラ校正手順</h3>
 <p><a href="#内部パラメータの取得で使う画像の印刷">内部パラメータの取得で使う画像の印刷</a>で画像を印刷していない場合は、<a href="https://raw.githubusercontent.com/Akiya-Research-Institute/MocapForAll-Wiki/main/resources/calibration/IntrinsicCalibration.png">この画像</a>を任意のアプリで画面にできるだけ大きく表示します。</p>
 <p>MocapForAllで「Camera &gt; Calibration &gt; Intrinsic」の下の「Start」ボタンをクリックします。<br />
 10秒間程度、さまざまな角度からカメラで画像を写してください。カメラを固定済みの場合は、カメラでなく画像の方を動かします。<br />
 カメラ校正が完了すると、アプリの画面上に内部パラメータが表示され、「Intrinsic  ☑Calibrated」となります。</p>
-<p><img alt="Camera-Calibration-Intrinsic-Execution" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Execution.gif" />　</p>
+<!-- ![Camera-Calibration-Intrinsic-Execution]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Execution.gif)　 -->
+<p><img alt="" loading="lazy" src="../images/Camera-Calibration-Intrinsic-Execution.gif" /></p>
 <p>完了したら「Save」からカメラ校正結果を保存しておきます。</p>
-<h3 id="_30">外部パラメータのカメラ校正手順</h3>
+<h3 id="_29">外部パラメータのカメラ校正手順</h3>
 <p>先に説明した<a href="#外部パラメータの取得の4つの方式">外部パラメータの取得の4つの方式</a>により、手順が異なります。</p>
 <ol>
 <li>
@@ -757,7 +817,8 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <p>MocapForAllで「Settings &gt; Calibration &gt; Extrinsic calibration method」で「<strong>ChArUco board (default)</strong>」を選択します。
 「Camera &gt; Calibration &gt; Extrinsic」の下の「Start」ボタンをクリックします。キャリブレーションが完了すると、外部パラメータが表示され、「Extrinsic  ☑Calibrated」となります。</p>
 <p>マーカの読み取りがうまく実施できない場合は、<a href="#マーカをうまく読み取れない場合">マーカをうまく読み取れない場合</a>を試してみてください。</p>
-<p><img alt="Camera-Calibration-Extrinsic-Execution-Charuco" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Charuco.gif" /></p>
+<p><!-- <img alt="Camera-Calibration-Extrinsic-Execution-Charuco" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Charuco.gif" /> -->
+<img alt="" loading="lazy" src="../images/Camera-Calibration-Extrinsic-Execution-Charuco.gif" /></p>
 </li>
 <li>
 <p>ArUcoクラスターを使う方法<br />
@@ -767,7 +828,8 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 「Camera &gt; Calibration &gt; Extrinsic」の下の「Scan markers」ボタンをクリックします。マーカの位置関係がスキャンされ、しばらくすると3Dビューポート上にマーカが表示されます。</p>
 <p>マーカがスキャンできたら「Stop scanning」をクリックし、次に「Start」ボタンをクリックします。キャリブレーションが完了すると、外部パラメータが表示され、「Extrinsic  ☑Calibrated」となります。  </p>
 <p>マーカの読み取りがうまく実施できない場合は、<a href="#マーカをうまく読み取れない場合">マーカをうまく読み取れない場合</a>を試してみてください。</p>
-<p><img alt="Camera-Calibration-Extrinsic-Execution-Aruco" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Aruco.gif" /></p>
+<p><!-- <img alt="Camera-Calibration-Extrinsic-Execution-Aruco" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Aruco.gif" /> -->
+<img alt="" loading="lazy" src="../images/Camera-Calibration-Extrinsic-Execution-Aruco.gif" /></p>
 </li>
 <li>
 <p>Diamondクラスターを使う方法<br />
@@ -776,7 +838,8 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <p>任意のカメラの一つで「Camera &gt; Calibration &gt; Extrinsic」の下の「Scan markers」ボタンをクリックします。そのカメラで、「diamondMarker0.png」を映します。次に「diamondMarker0.png」といずれかのマーカを同時に映してしばらくその状態を維持します。しばらくすると「diamondMarker0.png」を原点としてもう一つのマーカの位置が確定し、当該マーカが3Dビューポート上に表示されます。</p>
 <p>位置が確定済みのマーカと位置が未確定のマーカについて、上記の作業を繰り返し、全マーカの位置が確定したら「Stop scanning」をクリックします。</p>
 <p>位置が確定済みのマーカが映る位置にカメラを設置し、「Camera &gt; Calibration &gt; Extrinsic」の下の「Start」ボタンをクリックします。キャリブレーションが完了すると、外部パラメータが表示され、「Extrinsic  ☑Calibrated」となります。  </p>
-<p><img alt="Camera-Calibration-Extrinsic-Execution-Diamond" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Diamond.gif" /></p>
+<p><!-- <img alt="Camera-Calibration-Extrinsic-Execution-Diamond" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Diamond.gif" /> -->
+<img alt="" loading="lazy" src="../images/Camera-Calibration-Extrinsic-Execution-Diamond.gif" /></p>
 </li>
 <li>
 <p>体の動きを使う方法<br />
@@ -787,10 +850,11 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <p><strong>ウィンドウ上部の「Start calibration」ボタン</strong>をクリックし、全身がカメラに映る場所を歩き回ってください。<br />
 カメラに同時に映る人体の関節位置からカメラの相対位置が決定され、一つ目のカメラを基準にして外部パラメータが決定されます。全カメラの外部パラメータが決定され、「Extrinsic ☑Calibrated」となります。  </p>
 <p>最後に、次に説明する<a href="#マーカをうまく読み取れない場合">マーカをうまく読み取れない場合</a>と同じように、ウィンドウ上部の「Find Ground」ボタンをクリックして適当に歩きまわり、カメラの絶対位置を決定します。</p>
-<p><img alt="Camera-Calibration-Extrinsic-Execution-Human" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Human.gif" /></p>
+<p><!-- <img alt="Camera-Calibration-Extrinsic-Execution-Human" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Human.gif" /> -->
+<img alt="" loading="lazy" src="../images/Camera-Calibration-Extrinsic-Execution-Human.gif" /></p>
 </li>
 </ol>
-<h4 id="_31">マーカをうまく読み取れない場合</h4>
+<h4 id="_30">マーカをうまく読み取れない場合</h4>
 <p>マーカの位置がキャプチャ結果の高さゼロの面となるため、基本的にマーカは床に置くことを推奨していますが、カメラの性能や配置によっては床においたマーカを読み取ることが難しい場合があります。</p>
 <p>そのような場合、<strong>マーカを壁に掛けてカメラ校正を行い、床面の位置はあとから調整</strong>することができます。</p>
 <p>手順：
@@ -798,43 +862,45 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 - ハードウェアが対応していれば、「Settings &gt; General &gt; Run DNN on」を「<strong>GPU_DirectML</strong>」にします。（AppendixのTensorRTモードをインストール済みの場合は「GPU_TensorRT」でもOKです）<br />
   ハードウェアの性能が許せば、「Settings &gt; General &gt; Capture body」を「<strong>Speed</strong>」に設定します。（AppendixのPrecisionモードをインストール済みの場合は「Precision」でもOKです）
 - ウィンドウ上部の「<strong>Find Ground</strong>」をクリックし、全身が複数のカメラに映る場所を歩き回ります。しばらくすると、自動的に床面の位置が調整されます。</p>
-<p><img alt="Camera-Calibration-Extrinsic-Execution-FindGround" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-FindGround.gif" /></p>
-<h4 id="_32">カメラ校正結果の確認</h4>
+<!-- ![Camera-Calibration-Extrinsic-Execution-FindGround]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-FindGround.gif) -->
+<p><img alt="" loading="lazy" src="../images/Camera-Calibration-Extrinsic-Execution-FindGround.gif" /></p>
+<h4 id="_31">カメラ校正結果の確認</h4>
 <p><a href="#カメラ校正の準備2：マーカのサイズの計測">カメラ校正の準備2：マーカのサイズの計測</a>で正しい値を入力していれば、3Dビューポート上でカメラの位置を確認できます。視点の移動方法は、<a href="#視点の移動">視点の移動</a>を参照してください。</p>
 <p>カメラが床より下の位置に表示される場合がある可能性があることに注意してください。（この場合、カメラ校正が失敗しています）</p>
-<h3 id="_33">カメラ校正結果の保存と読み込み</h3>
+<h3 id="_32">カメラ校正結果の保存と読み込み</h3>
 <p>カメラ校正が完了したら、「Camera &gt; Calibration &gt; Intrinsic」と「Extrinsic」の下の「Save」から、各カメラの校正結果を保存しておきます。保存した結果は「Load」から読み込むことができます。</p>
 <p>また、ウィンドウ上部の「Save All Cameras」ボタンと「Load All Cameras」ボタンをクリックして、カメラ設定全体を保存およびロードできます。
 「Save All Cameras」では、カメラの選択はプルダウン内の何番目かという情報で保存されることに注意してください。 PCからカメラを取り外すと、プルダウン内のカメラの順序が変わり、カメラを正しくロードできなくなります。</p>
-<p><img alt="Camera-Calibration-Save" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Save.gif" /></p>
-<h2 id="_34">アプリ上での調整</h2>
+<p><img alt="Camera-Calibration-Save" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Save.gif" />
+<img alt="" loading="lazy" src="../images/.gif" /></p>
+<h2 id="_33">アプリ上での調整</h2>
 <p>前節までの作業に加え、アプリ上でいくつかのパラメータを調整する必要があります。</p>
-<h3 id="_35">視点の移動</h3>
+<h3 id="_34">視点の移動</h3>
 <p>これ以降の操作を行う前提として、MocapForAll上で視点を移動するには、WASDキーとマウスのドラッグを使用します。
 また、画面の最大化は、F11キーでオンオフできます。</p>
 <p><img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-wasd.png" alt="App-wasd" style="zoom:50%;" />　</p>
-<h3 id="_36">スケールの調整</h3>
+<h3 id="_35">スケールの調整</h3>
 <p><img alt="Settings-Coordinates-Scales" src="{{ site.url }}{{ site.baseurl }}/assets/images/Settings-Coordinates-Scales.png" /> </p>
 <p>ウィンドウ上部の「Start capture」をクリックし、二つ以上のカメラに全身を映すと、モーションがキャプチャされます。
 キャプチャ結果を観察し、下記の通りスケールを適切に調整することで、キャラクターに動きが正しく反映されるようにしていきます。　</p>
 <p>Virtual Motion TrackerおよびVRアプリと組み合わせて使用する場合は、後述の<a href="#steamvrとmocapforallの座標合わせ">SteamVRとMocapForAllの座標合わせ</a>でスケールも併せて調整するので、ここでの調整は適当でOKです。</p>
 <p>なお、上半身と下半身でスケールを分けているのは、2次元のキャラクターは一般に生身の人間より足が長いので、上半身と下半身を分けないと生身の人間のサイズと合わないからです。（そのため、上半身と下半身のスケールの比は適用したいキャラクターに依存します）</p>
-<h4 id="_37">下半身のスケール</h4>
+<h4 id="_36">下半身のスケール</h4>
 <p>腰、股関節、膝、足の位置に影響します。また、体全体の位置（root位置）もこのスケールに従います。</p>
 <ul>
 <li>キャラクターが常にしゃがんでいる場合： 「Settings &gt; Coordinates &gt; Scale &gt; Lower body」の値を増やします。</li>
 <li>キャラクターが宙に浮いている場合： 「Settings &gt; Coordinates &gt; Scale &gt; Lower body」の値を減らします。</li>
 </ul>
-<h4 id="_38">上半身のスケール</h4>
+<h4 id="_37">上半身のスケール</h4>
 <p>胸、首、頭、肩、肘、手、指の位置に影響します。</p>
 <ul>
 <li>キャラクターの肩が常に下を向いている場合： 「Settings &gt; Coordinates &gt; Scale &gt; Upper body」の値を増やします。</li>
 <li>キャラクターの肩が常に上を向いている場合： 「Settings &gt; Coordinates &gt; Scale &gt; Upper body」の値を減らします。</li>
 </ul>
-<h3 id="_39">動きの加工の調整</h3>
+<h3 id="_38">動きの加工の調整</h3>
 <p><img alt="Settings-AnimationPostProcess" src="{{ site.url }}{{ site.baseurl }}/assets/images/Settings-AnimationPostProcess.png" /> </p>
 <p>キャプチャされた動きは、下記の加工がされたうえで画面に表示されます。好みに応じてそれらの調整を行います。　</p>
-<h4 id="_40">足の強制接地のオンオフ</h4>
+<h4 id="_39">足の強制接地のオンオフ</h4>
 <p>足が地面にめり込んだり、地面から浮いたりしてしまわないよう、足が地面の近くにある場合はその位置を自動的に調整する機能があります。</p>
 <ul>
 <li><strong>足の接地感を重視</strong>する場合は、「Settings &gt; Animation Post Process &gt; Force feet grouded」を<strong>オン</strong>にして上記機能を使用することをおすすめします。</li>
@@ -844,15 +910,15 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 上記以外の外部送信データは、上記の位置調整が適用された後のものです。</p>
 <p>足がどれくらい地面に近い場合にこの位置調整が適用されるかは、「Settings &gt; Coordinates &gt; Scale &gt; Lower body」に応じて自動的に設定されます。
 <a href="#カメラ校正の準備2：マーカのサイズの計測">カメラ校正の準備2：マーカのサイズの計測</a>が適切に行われず、上記「Lower body」に大きな値を設定してしまっていると、足が全く地面から離れなくなることがあります。その場合は、<a href="#カメラ校正の準備2：マーカのサイズの計測">カメラ校正の準備2：マーカのサイズの計測</a>と<a href="#外部パラメータのカメラ校正手順">外部パラメータのカメラ校正</a>を再度実施するか、「Force feet grouded」をオフにしてください。</p>
-<h4 id="_41">スムージングの調整</h4>
+<h4 id="_40">スムージングの調整</h4>
 <p>キャプチャした動きを、時系列に沿ってスムージングする機能があります。
 外部送信できる各種データは、全てこのスムージングが適用された後のものです。</p>
-<h5 id="_42">スムージングのオンオフ</h5>
+<h5 id="_41">スムージングのオンオフ</h5>
 <p>通常オンの状態で使用しますが、キャプチャ結果を利用するアプリケーションで独自にスムージングを行う場合は、MocapForAll側でのスムージングをオフにすることがあります。
 「Settings &gt; Animation Post Process &gt; Smoothing on body」および「Smoothing on finger」「Smoothing on facial expression」で、体、指、表情へのスムージングのオンオフを設定できます。</p>
-<h5 id="_43">スムージングの強度の変更</h5>
+<h5 id="_42">スムージングの強度の変更</h5>
 <p>スムージングの強度を変更することもできます。</p>
-<h6 id="_44">スムージングのしくみ</h6>
+<h6 id="_43">スムージングのしくみ</h6>
 <p>スムージングには<a href="http://cristal.univ-lille.fr/~casiez/1euro/">1€フィルタ</a>を使用しています。1€フィルタとは、端的に表現すると「速さに比例してカットオフ周波数が増加するローパスフィルタ」です。通常のローパスフィルタは、ノイズを抑えようとすると機敏な動きへ追随することができなくなってしまいますが、1€フィルタでは、<strong>機敏な動きに対してはノイズ抑制を緩くしてやることで、低速でのノイズを抑えつつ機敏な動きへの追従性も確保する</strong>ことができます。</p>
 <p>下記の3つの項目を調整することができます。</p>
 <ul>
@@ -860,7 +926,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <li>Beta: 速さに比例してカットオフ周波数がどれだけ増加するか。<strong>これが大きな値であるほど、機敏な動きに追随できます</strong>。</li>
 <li>fcv: 速さに対するカットオフ周波数。速さに対しては、この値で指定されるカットオフ周波数を持つ通常のローパスフィルタが適用されます。</li>
 </ul>
-<h6 id="_45">スムージングの強度の調整手順</h6>
+<h6 id="_44">スムージングの強度の調整手順</h6>
 <ul>
 <li>
 <p>キャプチャを開始し、まず、体を動かさず真っすぐ立った時のノイズを観察します。ノイズが気になる場合は、fc0を減らします。</p>
@@ -869,10 +935,10 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <p>ノイズが十分抑えられたら、次に、キャプチャ目的に応じた適当な速さで体を動かします。動きに追随できていない場合は、Betaを増やします。</p>
 </li>
 </ul>
-<h3 id="_46">負荷対策</h3>
+<h3 id="_45">負荷対策</h3>
 <p>使用するPC環境と用途にあわせて、負荷を下げるよう設定します。</p>
 <p><img alt="Settings-General+Performance" src="{{ site.url }}{{ site.baseurl }}/assets/images/Settings-General+Performance.png" />  </p>
-<h4 id="_47">フレームレートの確認</h4>
+<h4 id="_46">フレームレートの確認</h4>
 <ul>
 <li>「Settings &gt; Performance &gt; Show frame rate」を<strong>オン</strong>にすると、現在のフレームレートがウィンドウ下部に表示されます。 </li>
 </ul>
@@ -889,14 +955,14 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
   TensorRTは、サポートされているNVIDIA製GPUでGPUアクセラレーションを可能にします。
   これを使用するには、CUDA、cuDNN、およびTensorRTをインストールした上で、「Appendix4_TensorRT_mode」をインストールする必要があります。詳細は、<a href="#temsorrtのインストール">TemsorRTのインストール手順</a>を参照してください。</li>
 </ul>
-<h4 id="_48">速度優先モード</h4>
+<h4 id="_47">速度優先モード</h4>
 <p>「Settings &gt; General &gt; Capture body」から、何を優先して実行するかを設定できます。</p>
 <ul>
 <li>多くの用途で「<strong>Speed</strong>」をおすすめします。</li>
 <li>ノートPCなど性能が低いPCを利用している場合や、非常に重いVRアプリと併用する場合などは、「Speed+」をおすすめします。</li>
 <li>映像用途等で特に精度よくモーションキャプチャしたい場合には、「Precision」モードを使用します。「<a href="#付録（省略可）">付録</a>」のAppendix1のインストールが必要です。</li>
 </ul>
-<h4 id="_49">描画を減らす</h4>
+<h4 id="_48">描画を減らす</h4>
 <p>下記の設定により、MocapForAll上での描画を減らし負荷を削減することができます。</p>
 <ul>
 <li>「Settings &gt; General &gt; Character」で「<strong>Empty</strong>」キャラクターを選択します。</li>
@@ -904,7 +970,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <li>「Settings &gt; Performance &gt; Set screen percentage to」を<strong>オン</strong>にし、小さな値 (たとえば 30%) を設定します。
   または、「Settings &gt; Performance &gt; Render the viewport」を<strong>オフ</strong>にします。</li>
 </ul>
-<h4 id="_50">フレームレートの上限を設定する</h4>
+<h4 id="_49">フレームレートの上限を設定する</h4>
 <ul>
 <li>「Settings &gt; Performance &gt; Limit framerate to:」を<strong>オン</strong>にし、目標とするフレームレート (たとえば 30FPS) を設定します。 
     MocapForAllはこのフレームレートを上限として動作します。</li>
@@ -961,7 +1027,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 </ul>
 <h3 id="steamvrmocapforall">SteamVRとMocapForAllの座標合わせ</h3>
 <p>SteamVRでトラッキングされているHMDおよびコントローラの座標系と、MocapForAllでトラッキングされている体の位置の座標系は、そのままでは一致しません。これらを一致させるよう、手動または自動で調整する必要があります。</p>
-<h4 id="_51">手動で調整する場合</h4>
+<h4 id="_50">手動で調整する場合</h4>
 <ul>
 <li>準備</li>
 <li>MocapForAll ウィンドウ上部の「Start capture」をクリックし、モーションのキャプチャを開始します。</li>
@@ -1004,7 +1070,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <p>自分の足の位置と「Feet」の仮想トラッカーの位置が一致するよう、「Settings &gt; Coordinates &gt; Origin position」の値を設定します。</p>
 </li>
 </ul>
-<h4 id="_52">自動調整機能を使う場合</h4>
+<h4 id="_51">自動調整機能を使う場合</h4>
 <p><a href="#virtual-motion-trackerのインストール">Virtual Motion Trackerのインストール</a>に記載の通り、この機能を使うには、Virtual Motion Trackerが<a href="https://github.com/KenjiAsaba/VirtualMotionTracker/releases">MocapForAll向けに改造したバージョン</a>である必要があります。また、MocapForAllはv1.10以降を使用する必要があります。</p>
 <ul>
 <li>VMT Manager および 他のポート39571を使用するアプリを終了します。</li>
@@ -1014,7 +1080,8 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <li>MocapForAllで、ウィンドウ上部の「Align coord. to VR」をクリックします。</li>
 <li>適当に歩き回ります。しばらくすると、自動的に「Settings &gt; Coordinates」の値が更新され、SteamVRとMocapForAllの座標が一致した状態になります。</li>
 </ul>
-<p><img alt="Settings-DataExport-VMT-SteamVR-Align" src="{{ site.url }}{{ site.baseurl }}/assets/images/Settings-DataExport-VMT-SteamVR-Align.gif" />　　</p>
+<!-- ![Settings-DataExport-VMT-SteamVR-Align]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-DataExport-VMT-SteamVR-Align.gif)　　 -->
+<p><img alt="" loading="lazy" src="../images/Settings-DataExport-VMT-SteamVR-Align.gif" /></p>
 <h2 id="vmc_1">VMCプロトコルによるアプリ連携</h2>
 <h3 id="vrm">VRMモデル読み込み</h3>
 <ul>
@@ -1022,7 +1089,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
   VRMモデルを読み込むには、キャプチャを停止した状態で、VRMファイルをMocapForAllのウィンドウにドラッグ&amp;ドロップしてください。  </li>
 </ul>
 <p><img src="{{ site.url }}{{ site.baseurl }}/assets/images/Settings-General-Character-VRM.gif" alt="Settings-General-Character-VRM" style="zoom:50%;" />　　</p>
-<h3 id="_53">モーションデータの送信</h3>
+<h3 id="_52">モーションデータの送信</h3>
 <p><img alt="Settings-DataExport-VMC" src="{{ site.url }}{{ site.baseurl }}/assets/images/Settings-DataExport-VMC.png" />　　</p>
 <ul>
 <li>「Settings &gt; Data export &gt; Destination IP address for VMT and VMC」を下記の通り設定します</li>
@@ -1036,7 +1103,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <ul>
 <li>「Settings &gt; Data export &gt; VMC protocol &gt; Send bones &gt; As trackers (/VMC/Ext/Tra/Pos) 」をオンにします</li>
 </ul>
-<h3 id="_54">表情モーフデータの受信・送信</h3>
+<h3 id="_53">表情モーフデータの受信・送信</h3>
 <p>表情モーフデータを受信するには、下記の通り設定します。</p>
 <ul>
 <li>「Settings &gt; Data export &gt; VMC protocol &gt; Receive facial morphs」をオンにします</li>
@@ -1053,7 +1120,8 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <p>VRMモデルをお持ちでない場合は、実際にモデルをロードせずに、「Settings &gt; General &gt; Character」で「VRM runtime load」を選択してください。<br />
 ダミーのVRMモデルがバックグラウンドで使用されます。</p>
 <h3 id="bvh_2">BVH形式での書き出し方法</h3>
-<p><img alt="Settings-DataExport-BVH" src="{{ site.url }}{{ site.baseurl }}/assets/images/Settings-DataExport-BVH.gif" /></p>
+<!-- ![Settings-DataExport-BVH]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-DataExport-BVH.gif) -->
+<p><img alt="" loading="lazy" src="../images/Settings-DataExport-BVH.gif" /></p>
 <ul>
 <li>「Settings &gt; Data export &gt; Record to BVH file」を有効にします。</li>
 <li>「Settings  &gt; General &gt; Character」が「VRM runtime load」に自動的に設定されます。</li>
@@ -1061,7 +1129,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <li>「Stop capture」をクリックすると、最終的なBVHファイルが生成されます。</li>
 <li>無料試用版の場合は、300フレーム経過時点で自動的にBVHファイルが生成され、データ保存が停止されます。</li>
 </ul>
-<h3 id="_55">長さの単位はメートル</h3>
+<h3 id="_54">長さの単位はメートル</h3>
 <p>生成されるBVHファイルのボーンの長さの単位はメートルとしています。読み込み先のアプリケーションで単位を適切に設定してください。</p>
 <h2 id="ue4-ue5-unity_1">UE4, UE5, Unityへのデータ連携具体例</h2>
 <h3 id="vmt">VMTプロトコルでの直接連携プラグイン</h3>
@@ -1090,17 +1158,17 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <li>EVMC4U</li>
 <li>https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity/wiki/How-to-use#externalreceiverpack%E3%82%92%E4%BD%BF%E3%81%86%E5%A0%B4%E5%90%88%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93 に記載の「0. Unityを準備する」から「4. 再生して実行」を実施します。</li>
 </ul>
-<h2 id="_56">共有メモリへの書き出し</h2>
+<h2 id="_55">共有メモリへの書き出し</h2>
 <p>キャプチャした体の動きと表情の生データを共有メモリに出力することができます。</p>
-<h3 id="_57">共有メモリへの書き出しのオンオフ</h3>
+<h3 id="_56">共有メモリへの書き出しのオンオフ</h3>
 <ul>
 <li>「Settings &gt; Data export &gt; Shared Memory &gt; Export to shared memory」を有効にします。</li>
 </ul>
-<h3 id="_58">出力先の共有メモリ名の変更</h3>
+<h3 id="_57">出力先の共有メモリ名の変更</h3>
 <ul>
 <li>「Settings &gt; Data export &gt; Shared Memory &gt; Names of shared memories」に設定した名前の共有メモリに、データが書き出されます。</li>
 </ul>
-<h3 id="_59">出力されるデータのフォーマット</h3>
+<h3 id="_58">出力されるデータのフォーマット</h3>
 <ul>
 <li>最初の1バイトは、データが更新される度に+1される（255の次は0に戻る）カウンタです。</li>
 <li>次の4バイトは、残りのデータのバイト単位での長さをint型で表した値です。</li>
@@ -1118,59 +1186,59 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <p><img src="{{ site.url }}{{ site.baseurl }}/assets/images/DataFormat-SharedMemory-Face.jpg" alt="DataFormat-SharedMemory-Face" style="zoom: 10%;" /> </p>
 <h4 id="eye">Eye</h4>
 <p>Faceのデータと同様の形式で、瞳について5点、まぶたについて71点の位置情報が出力されます。</p>
-<h3 id="_60">共有メモリからの値の取得の実装例</h3>
+<h3 id="_59">共有メモリからの値の取得の実装例</h3>
 <p>共有メモリに書き込まれたデータをUnityで読み取りGameObjectに反映するサンプルプロジェクトを<a href="https://github.com/Akiya-Research-Institute/MocapForAll-SharedMemory-Plugin-for-Unity">こちら</a>で公開しています。</p>
 <h1 id="3">使い方３：その他の設定編</h1>
-<h2 id="_61">手と顔のキャプチャ</h2>
+<h2 id="_60">手と顔のキャプチャ</h2>
 <ul>
 <li>「Settings &gt; General &gt; Capture hand」をオンにすると、指の動きをキャプチャします</li>
 <li>「Settings &gt; General &gt; Capture face」をオンにすると、顔の表情をキャプチャします</li>
 </ul>
 <p>上記はいずれも実験的な機能です。処理負荷が高いこと、精度が低いことに注意してください。</p>
-<h3 id="_62">キャプチャ時のトリミングのサイズ</h3>
+<h3 id="_61">キャプチャ時のトリミングのサイズ</h3>
 <p>「Settings &gt; Advanced &gt; Cropping size for hand」「Cropping size for face」から、手と顔のキャプチャ時に画像を切り抜いてAIへの入力とする際のサイズを設定できます。人によって手や顔の大きさが異なるため、この値を調整すると精度が向上することがあります。</p>
-<h3 id="_63">手のキャプチャの動作モード</h3>
+<h3 id="_62">手のキャプチャの動作モード</h3>
 <p>「Settings &gt; General &gt; Capture hand」の右のプルダウンから、動作モードを変更できます。</p>
 <ul>
 <li>「Full」：処理負荷が少し高く、精度が高いモードです。</li>
 <li>「Lite」：処理負荷が少し低く、精度が低いモードです。</li>
 <li>「Legacy」：v1.13以前に使用していたAIで動作します。後方互換のためのものです。</li>
 </ul>
-<h3 id="_64">顔のモーフターゲット名の設定</h3>
+<h3 id="_63">顔のモーフターゲット名の設定</h3>
 <p>VRM モデルを使用している場合にのみ、顔のモーフターゲット名を指定することができます。</p>
 <ul>
 <li>「Settings &gt; Advanced &gt; Specify facial morph target names」をオンにします</li>
 <li>各モーフターゲットの名前を入力します。</li>
 </ul>
-<h2 id="_65">キャラクターへの視点の追随</h2>
+<h2 id="_64">キャラクターへの視点の追随</h2>
 <ul>
 <li>「Settings &gt; General &gt; Look at character」をオンにすると、視点がキャラクターの動きに追随します</li>
 </ul>
-<h2 id="_66">トラッキング位置の表示・非表示</h2>
+<h2 id="_65">トラッキング位置の表示・非表示</h2>
 <ul>
 <li>「Settings &gt; General &gt; Draw tracking points」で、トラッキング位置を表す黄色い四角形の表示をオンオフできます</li>
 </ul>
-<h2 id="_67">言語</h2>
+<h2 id="_66">言語</h2>
 <ul>
 <li>画面右上の地球のアイコンから、使用する言語を設定できます。現状、日本語、英語、フランス語に対応しています。</li>
 </ul>
-<h2 id="_68">設定のリセット</h2>
+<h2 id="_67">設定のリセット</h2>
 <p>すべての設定をリセットするには、「C:\Users\【ユーザ名】\AppData\Local\MocapForAll」を削除します。</p>
 <p>MocapForAllが何らかの原因で起動しなくなった場合、設定をリセットすると起動することがあります。</p>
-<h2 id="_69">上半身のみへのモーション適用</h2>
+<h2 id="_68">上半身のみへのモーション適用</h2>
 <p>下記の設定により、キャラクターの上半身のみにモーションを適用するようになります。
 - "Settings &gt; General &gt; Capture body &gt; Apply to lower body" をオフにする。</p>
 <p>下半身は前フレームの位置で停止するので、必要に応じて "Settings &gt; Coordinates" で上半身と下半身の相対位置を調整してください。<br />
 なお、内部の処理としては単に下半身へのモーションの適用を停止しているだけです。</p>
-<h2 id="_70">録画した動画からモーションキャプチャする</h2>
+<h2 id="_69">録画した動画からモーションキャプチャする</h2>
 <p>v1.12から、録画済みの動画を使ってモーションキャプチャできるようになりました。</p>
-<h3 id="_71">使い方</h3>
+<h3 id="_70">使い方</h3>
 <ul>
 <li>MocapForAllのウィンドウ上部の「Add camera」の横の「▼」から、「Recorded video」を選択します。</li>
 <li>「...」ボタンを押し、動画ファイルを選択します。</li>
 <li>以降の基本的な使い方は、通常のウェブカメラと同様です。</li>
 </ul>
-<h3 id="_72">再生位置の挙動</h3>
+<h3 id="_71">再生位置の挙動</h3>
 <ul>
 <li>動画は自動的にループ再生されます。</li>
 <li>動画の再生位置は、「Start Capture」を押すと動画の先頭に戻ります。</li>
@@ -1181,7 +1249,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <li>内部パラメータの校正が終わったら「...」ボタンを押して外部パラメータ用の動画を開き、外部パラメータの校正が終わったら再度「...」ボタンを押して実際のモーションキャプチャ用の動画を開き、といった流れ。</li>
 <li>再生された中身を解析してカメラ間で動きを同期させる仕組みは<strong>ない</strong>ので、モーションキャプチャ用の動画は、先頭から同時再生すれば動きが同期するよう、事前に編集しておく必要があります。撮影時に、カチンコや手を叩く音などで同期点を明確にしておくのがおすすめです。</li>
 </ul>
-<h2 id="_73">起動時にコマンドライン引数で動作を指定する</h2>
+<h2 id="_72">起動時にコマンドライン引数で動作を指定する</h2>
 <p>v1.13から、下記の語句を引数に指定することで、起動時に特定の動作を実行させることができます。  </p>
 <ul>
 <li>「StartCapture」： 起動直後に「Start Capture」ボタンを押したときと同じ動作をします。</li>
@@ -1190,7 +1258,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <p>使用例：</p>
 <p><img alt="App-Commandline-Args" src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Commandline-Args.png" />  </p>
 <h1 id="faq">FAQ</h1>
-<h2 id="_74">カメラが認識されません</h2>
+<h2 id="_73">カメラが認識されません</h2>
 <ul>
 <li><a href="#カメラ制御フレームワークの選択">カメラ制御フレームワークの選択</a>で、UE4 media playerを選択します</li>
 <li>Image sizeから、異なるフォーマットを指定してみてください</li>
@@ -1198,12 +1266,12 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <li>カメラの仕様に基づき、適切なImage sizeを指定してください</li>
 </ul>
 <p>いずれでも動作しない場合、残念ですがMocapForAllでそのカメラは使用できません。</p>
-<h2 id="_75">同機種のカメラ複数が認識されません</h2>
+<h2 id="_74">同機種のカメラ複数が認識されません</h2>
 <p>同機種のカメラをPCに接続する場合、アプリ内のカメラ選択のプルダウン内に一部のカメラが表示されない（検出されない）問題があります。その場合は表示されないカメラデバイスにレジストリエディタから任意のFriendlyNameを設定すると認識される可能性があります。<br />
 FriendlyNameの設定・変更の方法はお使いの環境により異なるため、検索等で各自お調べください。レジストリの書き換えとなるため、バックアップを取るなどの対策をお勧めします。  </p>
-<h2 id="_76">仮想カメラが認識されません</h2>
+<h2 id="_75">仮想カメラが認識されません</h2>
 <p>OBSに標準で入っている仮想カメラは機能しないことがわかっています。<a href="https://obsproject.com/forum/resources/obs-virtualcam.539/">OBS-VirtualCamプラグイン</a>をインストールし、<a href="#カメラ制御フレームワークの選択">カメラ制御フレームワークの選択</a>で、Direct Showを選択してください。</p>
-<h2 id="_77">モノクロのカメラは使えますか</h2>
+<h2 id="_76">モノクロのカメラは使えますか</h2>
 <p>いいえ、このアプリではモノクロのカメラは使用できません。RGBカメラをご使用ください。  </p>
 <h2 id="ar">ARマーカが認識されません</h2>
 <ul>
@@ -1213,30 +1281,30 @@ FriendlyNameの設定・変更の方法はお使いの環境により異なる�
 <li>ARマーカのサイズを大きく印刷すると解決するかもしれません</li>
 <li>外部パラメータのカメラ校正においては、<a href="#マーカをうまく読み取れない場合">マーカをうまく読み取れない場合</a>を参照してください。</li>
 </ul>
-<h2 id="_78">外部パラメータのカメラ校正がうまくいきません</h2>
+<h2 id="_77">外部パラメータのカメラ校正がうまくいきません</h2>
 <p><a href="#マーカをうまく読み取れない場合">マーカをうまく読み取れない場合</a>を参照してください。</p>
-<h2 id="_79">カメラ校正をしてもモーションキャプチャができません</h2>
+<h2 id="_78">カメラ校正をしてもモーションキャプチャができません</h2>
 <ul>
 <li>キャプチャ開始時点は人が真っすぐ立っている画像でなければ認識できません。カメラの設置状況に合わせてカメラ画像を適切に回転してください。</li>
 <li>カメラ校正が完了した二つ以上のカメラから全身が映ることを確認してください。</li>
 <li>最終的なフレームレートが 4FPS 以下の場合、動作しません。<a href="#フレームレートの確認">フレームレートを確認</a>してください。</li>
 </ul>
-<h2 id="_80">複数人のキャプチャに対応していますか？</h2>
+<h2 id="_79">複数人のキャプチャに対応していますか？</h2>
 <p>いいえ、現在のところ1名のみのトラッキングが可能です。そのためカメラには原則1名のみが映るようにしてください。  </p>
 <h2 id="vmt_1">VMTが動きません</h2>
 <p>VMT Managerでエラーを確認してください。特に、<a href="https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/trouble/#room-matrix-is-not-set">Room Matrixの設定</a>がされているか確認してください。</p>
 <h2 id="vmt_2">VMTの動きがおかしいです</h2>
 <p><a href="#steamvrとmocapforallの座標合わせ">SteamVRとMocapForAllの座標合わせ</a>が適切にされているか確認してください。</p>
-<h2 id="_81">シリアルナンバーの入力欄がありません</h2>
+<h2 id="_80">シリアルナンバーの入力欄がありません</h2>
 <p>最新のMocapForAllをインストールしてください。バージョン1.0以降からHMDのシリアルナンバー入力は不要です。  </p>
 <h2 id="mocapforall_3">MocapForAllと他のツールとの違い</h2>
 <ul>
 <li><a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/advanced/3d_reconstruction_module.md">OpenPose</a>： 基本的な実装方針は近いですが、ライセンスが大きく異なります。OpenPoseは基本的に"ACADEMIC OR NON-PROFIT ORGANIZATION NONCOMMERCIAL RESEARCH USE ONLY"です。</li>
 </ul>
-<h1 id="_82">既知のバグ</h1>
+<h1 id="_81">既知のバグ</h1>
 <h2 id="rtx30xx-tensorrt">RTX30xx シリーズで TensorRT モードが動作しません</h2>
 <p>DirectMLモードを使ってください。</p>
-<h1 id="_83">謝辞</h1>
+<h1 id="_82">謝辞</h1>
 <p>フランス語へ翻訳してくれた Gonzales kévin, "Raybox41130" 様に心から感謝します。</p>
                 
               
