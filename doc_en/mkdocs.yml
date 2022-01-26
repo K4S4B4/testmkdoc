@@ -1,5 +1,5 @@
 site_name: MocapForAll Manual
-site_url: https://Akiya-Research-Institute.github.io/MocapForAll-Manual/en/
+site_url: https://Akiya-Research-Institute.github.io/MocapForAll-Manual/
 site_author: Kenji Asaba
 site_description: >-
   Official documentation of MocapForAll. MocapForAll is a Windows app to capture human motion with multiple webcams. Explains how to set it up and use it with VR and game engines.
@@ -62,7 +62,7 @@ extra:
       lang: ja
   analytics:
     provider: google
-    property: UA-XXXXXXXX-X
+    property: UA-2709176-10
   social:
     - icon: fontawesome/brands/youtube 
       link: https://www.youtube.com/channel/UC7t4amWNvquSy_ODcGZ4R0g

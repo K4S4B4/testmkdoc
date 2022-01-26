@@ -1,5 +1,5 @@
 site_name: MocapForAll マニュアル
-site_url: https://Akiya-Research-Institute.github.io/MocapForAll-Manual/ja/
+site_url: https://Akiya-Research-Institute.github.io/MocapForAll-Manual/
 site_author: Kenji Asaba
 site_description: MocapForAllの公式ドキュメント。MocapForAllは、複数のWebカメラで人間の動きをキャプチャするWindowsアプリです。セットアップ方法、SteamVRやゲームエンジン等と組み合わせて使用する方法等について説明しています。 
 copyright: Copyright &copy; 2022 Akiya Research Institute, Inc. All Rights Reserved
@@ -62,7 +62,7 @@ extra:
 
   analytics:
     provider: google
-    property: UA-XXXXXXXX-X
+    property: UA-2709176-10
   social:
     - icon: fontawesome/brands/youtube 
       link: https://www.youtube.com/channel/UC7t4amWNvquSy_ODcGZ4R0g
