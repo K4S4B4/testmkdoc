@@ -1,0 +1,79 @@
+site_name: MocapForAll Manual
+site_url: https://Akiya-Research-Institute.github.io/MocapForAll-Manual/en/
+site_author: Kenji Asaba
+site_description: >-
+  Official documentation of MocapForAll. MocapForAll is a Windows app to capture human motion with multiple webcams. Explains how to set it up and use it with VR and game engines.
+copyright: Copyright &copy; 2022 Akiya Research Institute, Inc. All Rights Reserved
+
+site_dir: ../site
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: M PLUS 1
+    code: M PLUS 1 Code
+  language: en
+  favicon: images/favicon.png
+  logo: images/logo.png
+  features:
+    - navigation.instant
+    - navigation.tracking    
+    # - navigation.tabs
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.indexes
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    
+extra:
+  alternate:
+    - name: English
+      link: /MocapForAll-Manual/en/ 
+      lang: en
+    - name: Japanese
+      link: /MocapForAll-Manual/ja/
+      lang: ja
+  analytics:
+    provider: google
+    property: UA-XXXXXXXX-X
+  social:
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/channel/UC7t4amWNvquSy_ODcGZ4R0g
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/Akiya_Souken_VR
+    - icon: fontawesome/brands/github 
+      link: https://github.com/Akiya-Research-Institute
+    # - icon: images/logo.png
+    #   link: https://vrlab.akiya-souken.co.jp/
+  # generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+
