@@ -1,20 +1,18 @@
 ---
 title: From BOOTH
-parent: How to install
-grand_parent: English
-nav_order: 1
 ---
 
 # Install and update from BOOTH
 
-## How to download
+## Download
 ### Free trial version
 Free trial version is available on BOOTH.  
 
-[BOOTH store](https://akiya-souken.booth.pm/items/3026474){: .btn }  
+[BOOTH store](https://akiya-souken.booth.pm/items/3026474){: .md-button }  
 
 It is required to try free version and confirm that the software works without problems in your environment before purchase of paid version.   
 The free version has limited functionality only for data export.  
+
 - Data sending via VMT protocol and VMC protocol stops and restarts every 10 seconds
 - Maximum frames in a BVH file is limited to 300
 
@@ -22,14 +20,14 @@ The free version has limited functionality only for data export.
 Before purchase, please read and accept the terms and conditions from the following link.  
 If you agree, you can get your purchase password and proceed to the purchase page at BOOTH.  
 
-[Our HP](https://vrlab.akiya-souken.co.jp/product#buy){: .btn .btn-red }  
+[Our HP](https://vrlab.akiya-souken.co.jp/product#buy){: .md-button .md-button--primary }  
 
 You need a pixiv account to purchase at BOOTH.
 
-## How to install
-You can install MocapForAll [manually](#manual-installation) or by using [network installer](#installation-by-network-installer) from BOOTH.  
+## Install
+You can install MocapForAll manually or by using network installer from BOOTH.  
 
-### Manual installation
+### Manual install
 
 #### Main files
 1. Download and unzip "MocapForAll_Full_vN.N.N.zip"
@@ -54,24 +52,23 @@ There are four Appendix as follows:
 ##### How to install Appendix
 1. Download and unzip "AppendixN_xxxxx_yyyyy.zip".
 2. Overwrite "MocapForAll_Full_vN.N.N\MocapForAll" with "AppendixN_xxxxx_yyyyy\MocapForAll".
-3. If you install "Appendix4_TensorRT_mode", follow the [installation guide of TensorRT](./install-tensorrt).
+3. If you install "Appendix4_TensorRT_mode", follow the [installation guide of TensorRT](../install-tensorrt).
 
 
-### Installation by Network Installer
+### Install by Network Installer
 1. Download and unzip "Network_Installer_-_MocapForAll_Full_vN.N.N.zip".
 
 2. Execute "Network_Installer_-_MocapForAll_Full_vN.N.N.exe".
 
-3. Select the required Appendix. See [Appendix](#appendix-optional) for the contents.
-
-   To use "Appendix4_TensorRT_mode", see [Installation of TensorRT](./install-tensorrt) and install the required software.
+3. Select the required Appendix. See [Appendix](#appendix-optional) for the contents.  
+   To use "Appendix4_TensorRT_mode", see [Installation of TensorRT](../install-tensorrt) and install the required software.
 
 4. Run MocapForAll from the Start menu or MocapForAll.exe in the installation path.
 
 5. If the "UE4 Prerequisites" installation screen is displayed, install it.
 
 
-## How to update from BOOTH
+## Update
 
 ### Manual update
 

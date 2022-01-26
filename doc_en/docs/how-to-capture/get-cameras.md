@@ -1,10 +1,3 @@
----
-title: Get cameras
-parent: How to capture motion
-grand_parent: English
-nav_order: 1
----
-
 # Get cameras
 You need webcams that can be connected to the PC in which MocapForAll installed.  
 To use smartphones or tablets, use apps that turns your smartphones or tablets into webcams, such as [DroidCam](https://www.dev47apps.com/) or [Iriun](https://iriun.com/).   
@@ -35,9 +28,10 @@ If the camera is looking up or down too much, the accuracy tends to be poor.
 ### Horizontal position: 45° left and right from front
 It is recommended to place the camera at 45 degree left and right from the front of the captured person.  
 If the capture target and the two cameras are positioned in a straight line, the accuracy tend to be poor because the depth information is insufficient.  
+
 This is an example of our camera placement:  
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Placing.png" alt="カメラの設置位置" width="640" height="360" />  
+  ![](../images/Camera-Placing.png){ loading=lazy }
 
 ## Number of the cameras
 
@@ -45,6 +39,5 @@ By increasing the number of cameras, the occlusion is reduced, so it is expected
 Since the CPU / GPU usage increases almost in proportion to the number of cameras, increasing the number of cameras will reduce the frame rate of the capture depending on the performance of your PC.  
 We recommend that you start with two cameras and consider adding more if you find that occlusion cause problems.  
 
-（Examples）  
-[Capturing a person sitting in a chair with 2 cameras](https://twitter.com/i/status/1397023364623998977)  
-[Capturing a person sitting in a chair with 4 cameras](https://twitter.com/i/status/1397121208257110019)  
+（Examples: Comparison of 4 cameras vs 2 cameras）  
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">カメラ４台での実行結果です。アプリケーションとしては、カメラの台数に上限を設けていません。ただし、カメラ数に比例して処理負荷が増大するため、どこまで増やせるかはPCのスペックに依存します。<br>↓ カメラ2台 ↓<a href="https://t.co/cCG3Le6t9a">https://t.co/cCG3Le6t9a</a> <a href="https://t.co/9r3CjP23Bl">pic.twitter.com/9r3CjP23Bl</a></p>&mdash; 空き家総研VRラボ -Akiya Research Institute,VRlab- (@Akiya_Souken_VR) <a href="https://twitter.com/Akiya_Souken_VR/status/1397121208257110019?ref_src=twsrc%5Etfw">May 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -1,7 +1,7 @@
 # What is MocapForAll?
 
 ## Motion capture software for everyone
-![App-Demo.gif](images/App-Demo.gif){ loading=lazy }
+![](images/App-Demo.gif){ loading=lazy }
 
 
 ### No special equipment required
@@ -27,14 +27,14 @@ An option for projects with limited budgets, such as indie games, indie films, o
 - You can save the captured motion to files in BVH format.
 - You can output captured motion to the shared memory in real time.
 
-> (\*1 The "VMT protocol" here refers to the [message format](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/api/#osc-protocol-osc) used in the communication of [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/). The official HP of Virtual Motion Tracker does not use the word "VMT protocol", but MocapForAll uses the word "VMT protocol" for convenience.)
->
-> (\*2 Both VMT protocol and VMC protocol use UDP/OpenSound Control.)
->
+!!! Note
+    (\*1) The "VMT protocol" here refers to the [message format](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/api/#osc-protocol-osc) used in the communication of [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/). The official HP of Virtual Motion Tracker does not use the word "VMT protocol", but MocapForAll uses the word "VMT protocol" for convenience.  
+    (\*2) Both VMT protocol and VMC protocol use UDP/OpenSound Control.
+
 
 By using these, you can do the followings, as well as  you can even create your own programs to receive data since the output specifications are open to public.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Overview.png" alt="App-Overview" width="640" height="360" /> 
+![](images/App-Overview.png){ loading=lazy }
 
 ### Use in SteamVR via Virtual Motion Tracker
 Through [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/), the capture motion can be used as virtual trackers in applications running on SteamVR.
