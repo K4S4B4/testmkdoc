@@ -5,7 +5,7 @@ site_description: >-
   Official documentation of MocapForAll. MocapForAll is a Windows app to capture human motion with multiple webcams. Explains how to set it up and use it with VR and game engines.
 copyright: Copyright &copy; 2022 Akiya Research Institute, Inc. All Rights Reserved
 
-site_dir: ../site
+site_dir: ../docs
 
 extra_css:
   - stylesheets/extra.css
