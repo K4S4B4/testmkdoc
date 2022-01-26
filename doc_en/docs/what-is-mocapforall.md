@@ -1,13 +1,7 @@
----
-title: What is MocapForAll?
-parent: English
-nav_order: 1
----
-
 # What is MocapForAll?
 
 ## Motion capture software for everyone
-<iframe width="640" height="360" class="table-wrapper py px" frameborder="0" srcdoc="<img src=&quot;{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif&quot; alt=&quot;App-Demo&quot; width=&quot;640&quot; height=&quot;360&quot; />"></iframe>
+![App-Demo.gif](images/App-Demo.gif){ loading=lazy }
 
 
 ### No special equipment required
