@@ -13,21 +13,21 @@
         <meta name="author" content="Kenji Asaba">
       
       
-        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/MocapForAll-Manual/how-to-capture/">
+        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/MocapForAll-Manual/how-to-capture/calibrate-cameras/what-is-camera-calibration/">
       
-      <link rel="icon" href="../images/favicon.png">
+      <link rel="icon" href="../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
-        <title>How to capture motion - MocapForAll Manual</title>
+        <title>What is camera calibration? - MocapForAll Manual</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -42,7 +42,7 @@
     
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
     
       
@@ -74,7 +74,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -82,6 +82,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#what-is-camera-calibration" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -92,9 +97,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MocapForAll Manual" class="md-header__button md-logo" aria-label="MocapForAll Manual" data-md-component="logo">
+    <a href="../../.." title="MocapForAll Manual" class="md-header__button md-logo" aria-label="MocapForAll Manual" data-md-component="logo">
       
-  <img src="../images/logo.png" alt="logo">
+  <img src="../../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -110,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to capture motion
+              What is camera calibration?
             
           </span>
         </div>
@@ -252,9 +257,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MocapForAll Manual" class="md-nav__button md-logo" aria-label="MocapForAll Manual" data-md-component="logo">
+    <a href="../../.." title="MocapForAll Manual" class="md-nav__button md-logo" aria-label="MocapForAll Manual" data-md-component="logo">
       
-  <img src="../images/logo.png" alt="logo">
+  <img src="../../../images/logo.png" alt="logo">
 
     </a>
     MocapForAll Manual
@@ -270,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-is-mocapforall/" class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         What is MocapForAll?
       </a>
     </li>
@@ -311,45 +316,9 @@
               
   
   
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        How to capture motion
-      </a>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
   
     <li class="md-nav__item">
-      <a href="calibrate-cameras/" class="md-nav__link">
-        Calibrate cameras
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get-cameras/" class="md-nav__link">
+      <a href="../../get-cameras/" class="md-nav__link">
         Get cameras
       </a>
     </li>
@@ -362,10 +331,218 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Adjust settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Adjust settings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Adjust settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="settings-on-the-app/" class="md-nav__link">
-        Settings on the app
+      <a href="../../adjust-settings/adjust-animation/" class="md-nav__link">
+        Adjust animation
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adjust-settings/adjust-scales/" class="md-nav__link">
+        Adjust scales
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adjust-settings/optimize-performance/" class="md-nav__link">
+        Optimize performance
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Calibrate cameras
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Calibrate cameras" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Calibrate cameras
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-cameras/" class="md-nav__link">
+        Connect cameras
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../execute-calibration/" class="md-nav__link">
+        Execute calibration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prepare-markers/" class="md-nav__link">
+        Prepare markers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          What is camera calibration?
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        What is camera calibration?
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-intrinsic-parameters" class="md-nav__link">
+    What is intrinsic parameters?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-extrinsic-parameters" class="md-nav__link">
+    What is extrinsic parameters?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-methods-to-get-extrinsic-parameters" class="md-nav__link">
+    4 methods to get extrinsic parameters
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -411,8 +588,64 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-export/" class="md-nav__link">
-        How to export motion
+      <a href="../../../how-to-export/to-bvh-files/" class="md-nav__link">
+        To BVH files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to-export/to-game-engines/" class="md-nav__link">
+        To game engines
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to-export/to-shared-memory/" class="md-nav__link">
+        To shared memory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to-export/to-steamvr/" class="md-nav__link">
+        To SteamVR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to-export/to-vmc-marionette/" class="md-nav__link">
+        To VMC marionette
       </a>
     </li>
   
@@ -459,21 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-install/" class="md-nav__link">
-        How to install
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-install/from-booth/" class="md-nav__link">
+      <a href="../../../how-to-install/from-booth/" class="md-nav__link">
         From BOOTH
       </a>
     </li>
@@ -487,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-install/from-steam/" class="md-nav__link">
+      <a href="../../../how-to-install/from-steam/" class="md-nav__link">
         From Steam
       </a>
     </li>
@@ -501,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-install/install-tensorrt/" class="md-nav__link">
+      <a href="../../../how-to-install/install-tensorrt/" class="md-nav__link">
         Install TensorRT
       </a>
     </li>
@@ -549,8 +768,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../other-settings/" class="md-nav__link">
-        Other settings
+      <a href="../../../other-settings/" class="md-nav__link">
+        Others
       </a>
     </li>
   
@@ -563,7 +782,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../other-settings/capture-hand-and-face/" class="md-nav__link">
+      <a href="../../../other-settings/capture-from-recorded-video/" class="md-nav__link">
+        Capture from recorded video
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../other-settings/capture-hand-and-face/" class="md-nav__link">
         Capture hand and face
       </a>
     </li>
@@ -590,11 +823,79 @@
               
                 
                 
-                  <h1>How to capture motion</h1>
-                
-                
-                
-                  
+                <h1 id="what-is-camera-calibration">What is camera calibration?</h1>
+<p>Camera calibration is the process of obtaining information about the relationship between <strong>the positions in the camera image and the positions in the real world</strong>. This section describes the concept of what you are doing with camera calibration and some tips for it.</p>
+<p>In camera calibration in MocapForAll, the following 2 types of information are obtained:</p>
+<ul>
+<li>Intrinsic parameters (Characteristics of the camera itself)</li>
+<li>Extrinsic parameters (Position of the camera in the real world)</li>
+</ul>
+<h2 id="what-is-intrinsic-parameters">What is intrinsic parameters?</h2>
+<p>Intrinsic parameters are the focal length <em>f</em> of the lens and the position of the optical axis <em>Cx, Cy</em>, which describes the <strong>characteristics of the camera itself</strong>.<br />
+These are unique to the camera (lens) and basically do not change over time. Therefore, <strong>once you get them correctly, you don't need to get them again.</strong>  </p>
+<div class="admonition warning">
+<p class="admonition-title">Notes on autofocus</p>
+<p>If you use a camera with autofocus, keep in mind that as the focus changes, the focal length changes, so the intrinsic parameter also changes.<br />
+In our experiences, it does not cause much problems when using regular webcams or mobile phones, but if high accuracy is not obtained, you might need to disable autofocus.  </p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Mathematical representation</p>
+<p>Mathematically, it is represented by a matrix that describes the relationship between "positions in the camera image" and "positions in the camera coordinate". This is the matrix displayed on the app screen.  </p>
+<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Intrinsic-Equation.png" />  </p>
+<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Intrinsic-Geometry.png" /></p>
+</div>
+<h2 id="what-is-extrinsic-parameters">What is extrinsic parameters?</h2>
+<p>Extrinsic parameters are <strong>the position and the orientation of the camera in the real world</strong>.<br />
+In theory, once the camera is completely fixed in your room, it can be treated as a fixed value. But in practice, it sometimes shifts little by little over time. So, <strong>it is recommended to obtain it again every time you start using MocapForAll</strong>.   </p>
+<div class="admonition question">
+<p class="admonition-title">Mathematical representation</p>
+<p>Mathematically, it is represented by a matrix that describes the relationship between "positions in the camera coordinate" and "positions in the world coordinate". This is the matrix displayed on the app screen.</p>
+<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Extrinsic-Equation.png" />  </p>
+<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Extrinsic-Geometry.png" /></p>
+</div>
+<h2 id="4-methods-to-get-extrinsic-parameters">4 methods to get extrinsic parameters</h2>
+<p>In MocapForAll, there are 4 methods to get extrinsic parameters. Please note that the preparation and execution procedures are different for each.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Accuracy</th>
+<th>Ease of preparation</th>
+<th>The size of the usable space</th>
+<th>　Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Method using ChArUco board</td>
+<td>👍👍👍</td>
+<td>👍</td>
+<td>👍</td>
+<td>The most accurate, but requires a little work to prepare. <strong>I think this is the easiest way in the long run.</strong></td>
+</tr>
+<tr>
+<td>2. Method using ArUco cluster</td>
+<td>👍👍</td>
+<td>👍👍</td>
+<td>👍👍</td>
+<td>This is a method with good accuracy and easy preparation. <strong>For beginners, I recommend that you try this method first.</strong></td>
+</tr>
+<tr>
+<td>3. Method using Diamond cluster</td>
+<td>👍👍👍</td>
+<td>💀</td>
+<td>👍👍👍</td>
+<td>This method allows capturing in a large space with many cameras by measuring the relative positions of multiple markers, though it takes time to prepare.</td>
+</tr>
+<tr>
+<td>4. Method using human motion</td>
+<td>👍</td>
+<td>👍👍👍</td>
+<td>👍👍</td>
+<td>This method allows capturing in an environment where the marker cannot be printed or placed (for example, outdoors).</td>
+</tr>
+</tbody>
+</table>
                 
               
               
@@ -614,7 +915,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../what-is-mocapforall/" class="md-footer__link md-footer__link--prev" aria-label="Previous: What is MocapForAll?" rel="prev">
+        <a href="../prepare-markers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prepare markers" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -623,20 +924,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              What is MocapForAll?
+              Prepare markers
             </div>
           </div>
         </a>
       
       
         
-        <a href="calibrate-cameras/" class="md-footer__link md-footer__link--next" aria-label="Next: Calibrate cameras" rel="next">
+        <a href="../../../how-to-export/to-bvh-files/" class="md-footer__link md-footer__link--next" aria-label="Next: To BVH files" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Calibrate cameras
+              To BVH files
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -702,10 +1003,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>
