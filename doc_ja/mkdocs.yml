@@ -64,14 +64,20 @@ extra:
     provider: google
     property: UA-2709176-10
   social:
+    - icon: fontawesome/solid/home
+      link: https://vrlab.akiya-souken.co.jp/
     - icon: fontawesome/brands/youtube 
       link: https://www.youtube.com/channel/UC7t4amWNvquSy_ODcGZ4R0g
     - icon: fontawesome/brands/twitter 
       link: https://twitter.com/Akiya_Souken_VR
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/VvkHcdueUW
     - icon: fontawesome/brands/github 
       link: https://github.com/Akiya-Research-Institute
-    # - icon: images/logo.png
-    #   link: https://vrlab.akiya-souken.co.jp/
+    - icon: fontawesome/brands/steam
+      link: https://store.steampowered.com/app/1759710/MocapForAll/
+    - icon: fontawesome/solid/store-alt
+      link: https://akiya-souken.booth.pm/
   # generator: false
 
 markdown_extensions:

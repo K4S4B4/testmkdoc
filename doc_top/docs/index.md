@@ -1,18 +1,15 @@
-# Welcome to MkDocs
+---
+hide:
+  - navigation
+  - toc
+---
 
-English!!!
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Welcome to MocapForAll Manual
 
-## Commands
+<iframe width="800" height="450" src="https://www.youtube.com/embed/SP72wWWFcHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+# 
 
-## Project layout
+# [English manual](./en)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+# [日本語マニュアル](./ja)

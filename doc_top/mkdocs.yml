@@ -1,5 +1,6 @@
 site_name: MocapForAll Manual
-site_url: https://Akiya-Research-Institute.github.io/MocapForAll-Manual/
+# site_url: https://Akiya-Research-Institute.github.io/MocapForAll-Manual/
+site_url: https://Akiya-Research-Institute.github.io/testmkdoc/
 site_author: Kenji Asaba
 site_description: >-
   Official documentation of MocapForAll. MocapForAll is a Windows app to capture human motion with multiple webcams. Explains how to set it up and use it with VR and game engines.
@@ -12,6 +13,7 @@ extra_css:
 
 theme:
   name: material
+  # custom_dir: overrides  
   palette:
     - scheme: default
       toggle:
@@ -64,12 +66,21 @@ extra:
     provider: google
     property: UA-2709176-10
   social:
+    - icon: fontawesome/solid/home
+      link: https://vrlab.akiya-souken.co.jp/
     - icon: fontawesome/brands/youtube 
       link: https://www.youtube.com/channel/UC7t4amWNvquSy_ODcGZ4R0g
     - icon: fontawesome/brands/twitter 
       link: https://twitter.com/Akiya_Souken_VR
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/VvkHcdueUW
     - icon: fontawesome/brands/github 
       link: https://github.com/Akiya-Research-Institute
+    - icon: fontawesome/brands/steam
+      link: https://store.steampowered.com/app/1759710/MocapForAll/
+    - icon: fontawesome/solid/store-alt
+      link: https://akiya-souken.booth.pm/
+
     # - icon: images/logo.png
     #   link: https://vrlab.akiya-souken.co.jp/
   # generator: false
@@ -79,3 +90,4 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+plugins: []
