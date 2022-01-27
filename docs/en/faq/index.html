@@ -1,33 +1,33 @@
 
 <!doctype html>
-<html lang="ja" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="MocapForAllの公式ドキュメント。MocapForAllは、複数のWebカメラで人間の動きをキャプチャするWindowsアプリです。セットアップ方法、SteamVRやゲームエンジン等と組み合わせて使用する方法等について説明しています。">
+        <meta name="description" content="Official documentation of MocapForAll. MocapForAll is a Windows app to capture human motion with multiple webcams. Explains how to set it up and use it with VR and game engines.">
       
       
       
         <meta name="author" content="Kenji Asaba">
       
       
-        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/testmkdoc/how-to-capture/calibrate-cameras/execute-calibration/">
+        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/MocapForAll-Manual/faq/">
       
-      <link rel="icon" href="../../../images/favicon.png">
+      <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
-        <title>カメラ校正の実施 - MocapForAll マニュアル</title>
+        <title>FAQ - MocapForAll Manual</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -42,7 +42,7 @@
     
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     
       
@@ -74,7 +74,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -84,8 +84,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
-          コンテンツにスキップ
+        <a href="#faq" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -96,10 +96,10 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../../.." title="MocapForAll マニュアル" class="md-header__button md-logo" aria-label="MocapForAll マニュアル" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MocapForAll Manual" class="md-header__button md-logo" aria-label="MocapForAll Manual" data-md-component="logo">
       
-  <img src="../../../images/logo.png" alt="logo">
+  <img src="../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,13 +109,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            MocapForAll マニュアル
+            MocapForAll Manual
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              カメラ校正の実施
+              FAQ
             
           </span>
         </div>
@@ -198,7 +198,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -209,7 +209,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
           </a>
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="クリア" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
         </button>
       </nav>
@@ -221,7 +221,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            検索を初期化
+            Initializing search
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -255,14 +255,14 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MocapForAll マニュアル" class="md-nav__button md-logo" aria-label="MocapForAll マニュアル" data-md-component="logo">
+    <a href=".." title="MocapForAll Manual" class="md-nav__button md-logo" aria-label="MocapForAll Manual" data-md-component="logo">
       
-  <img src="../../../images/logo.png" alt="logo">
+  <img src="../images/logo.png" alt="logo">
 
     </a>
-    MocapForAll マニュアル
+    MocapForAll Manual
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -275,8 +275,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        MocapForAllって何？
+      <a href=".." class="md-nav__link">
+        What is MocapForAll?
       </a>
     </li>
   
@@ -299,14 +299,14 @@
       
       
         <label class="md-nav__link" for="__nav_2">
-          インストール方法
+          How to install
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="インストール方法" data-md-level="1">
+      <nav class="md-nav" aria-label="How to install" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          インストール方法
+          How to install
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -316,8 +316,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../how-to-install/install-mocapforall/" class="md-nav__link">
-        MocapForAllのインストール
+      <a href="../how-to-install/install-mocapforall/" class="md-nav__link">
+        Install MocapForAll
       </a>
     </li>
   
@@ -330,8 +330,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../how-to-install/install-tensorrt/" class="md-nav__link">
-        TensorRTのインストール
+      <a href="../how-to-install/install-tensorrt/" class="md-nav__link">
+        Install TensorRT
       </a>
     </li>
   
@@ -350,27 +350,25 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
       
         <label class="md-nav__link" for="__nav_3">
-          キャプチャー方法
+          How to capture
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="キャプチャー方法" data-md-level="1">
+      <nav class="md-nav" aria-label="How to capture" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          キャプチャー方法
+          How to capture
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -380,8 +378,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../get-cameras/" class="md-nav__link">
-        カメラの用意
+      <a href="../how-to-capture/get-cameras/" class="md-nav__link">
+        Get cameras
       </a>
     </li>
   
@@ -392,27 +390,25 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
       
       
       
       
         <label class="md-nav__link" for="__nav_3_2">
-          カメラ校正
+          Calibrate cameras
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="カメラ校正" data-md-level="2">
+      <nav class="md-nav" aria-label="Calibrate cameras" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
-          カメラ校正
+          Calibrate cameras
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -422,8 +418,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-is-camera-calibration/" class="md-nav__link">
-        カメラ校正とは？
+      <a href="../how-to-capture/calibrate-cameras/what-is-camera-calibration/" class="md-nav__link">
+        What is camera calibration?
       </a>
     </li>
   
@@ -436,8 +432,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../prepare-markers/" class="md-nav__link">
-        マーカの準備
+      <a href="../how-to-capture/calibrate-cameras/prepare-markers/" class="md-nav__link">
+        Prepare markers
       </a>
     </li>
   
@@ -450,8 +446,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../connect-cameras/" class="md-nav__link">
-        カメラの接続
+      <a href="../how-to-capture/calibrate-cameras/connect-cameras/" class="md-nav__link">
+        Connect cameras
       </a>
     </li>
   
@@ -462,107 +458,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          カメラ校正の実施
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        カメラ校正の実施
+    <li class="md-nav__item">
+      <a href="../how-to-capture/calibrate-cameras/execute-calibration/" class="md-nav__link">
+        Execute calibration
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    内部パラメータの取得
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    外部パラメータの取得
-  </a>
-  
-    <nav class="md-nav" aria-label="外部パラメータの取得">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    マーカをうまく読み取れない場合
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    カメラ校正結果の確認
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    結果の保存と読み込み
-  </a>
-  
-    <nav class="md-nav" aria-label="結果の保存と読み込み">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    各カメラ
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    全カメラ
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -590,14 +490,14 @@
       
       
         <label class="md-nav__link" for="__nav_3_3">
-          設定の調整
+          Adjust settings
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="設定の調整" data-md-level="2">
+      <nav class="md-nav" aria-label="Adjust settings" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
-          設定の調整
+          Adjust settings
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -607,8 +507,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adjust-settings/adjust-scales/" class="md-nav__link">
-        スケールの調整
+      <a href="../how-to-capture/adjust-settings/adjust-scales/" class="md-nav__link">
+        Adjust scales
       </a>
     </li>
   
@@ -621,8 +521,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adjust-settings/adjust-animation/" class="md-nav__link">
-        動きの加工の調整
+      <a href="../how-to-capture/adjust-settings/adjust-animation/" class="md-nav__link">
+        Adjust animation
       </a>
     </li>
   
@@ -635,8 +535,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adjust-settings/optimize-performance/" class="md-nav__link">
-        パフォーマンス最適化
+      <a href="../how-to-capture/adjust-settings/optimize-performance/" class="md-nav__link">
+        Optimize performance
       </a>
     </li>
   
@@ -673,14 +573,14 @@
       
       
         <label class="md-nav__link" for="__nav_4">
-          エクスポート方法
+          How to export
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="エクスポート方法" data-md-level="1">
+      <nav class="md-nav" aria-label="How to export" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          エクスポート方法
+          How to export
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -690,8 +590,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../how-to-export/to-steamvr/" class="md-nav__link">
-        SteamVRへの連携
+      <a href="../how-to-export/to-steamvr/" class="md-nav__link">
+        Export to SteamVR
       </a>
     </li>
   
@@ -704,8 +604,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../how-to-export/to-game-engines/" class="md-nav__link">
-        ゲームエンジンへの連携
+      <a href="../how-to-export/to-game-engines/" class="md-nav__link">
+        Export to game engines
       </a>
     </li>
   
@@ -718,8 +618,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../how-to-export/to-vmc-marionette/" class="md-nav__link">
-        VMC互換アプリへの連携
+      <a href="../how-to-export/to-vmc-marionette/" class="md-nav__link">
+        Export to VMC marionette
       </a>
     </li>
   
@@ -732,8 +632,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../how-to-export/to-bvh-files/" class="md-nav__link">
-        BVH形式での書き出し
+      <a href="../how-to-export/to-bvh-files/" class="md-nav__link">
+        Export to BVH files
       </a>
     </li>
   
@@ -746,8 +646,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../how-to-export/to-shared-memory/" class="md-nav__link">
-        共有メモリへの出力
+      <a href="../how-to-export/to-shared-memory/" class="md-nav__link">
+        Export to shared memory
       </a>
     </li>
   
@@ -777,14 +677,14 @@
       
       
         <label class="md-nav__link" for="__nav_5">
-          その他の設定
+          Other settings
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="その他の設定" data-md-level="1">
+      <nav class="md-nav" aria-label="Other settings" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
-          その他の設定
+          Other settings
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -794,8 +694,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../other-settings/capture-hand-and-face/" class="md-nav__link">
-        手と顔のキャプチャ
+      <a href="../other-settings/capture-hand-and-face/" class="md-nav__link">
+        Capture hand and face
       </a>
     </li>
   
@@ -808,8 +708,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../other-settings/capture-from-recorded-video/" class="md-nav__link">
-        録画した動画からのキャプチャ
+      <a href="../other-settings/capture-from-recorded-video/" class="md-nav__link">
+        Capture from recorded video
       </a>
     </li>
   
@@ -822,8 +722,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../other-settings/" class="md-nav__link">
-        その他
+      <a href="../other-settings/" class="md-nav__link">
+        Others
       </a>
     </li>
   
@@ -842,11 +742,130 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../faq/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FAQ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         FAQ
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-camera-does-not-work" class="md-nav__link">
+    The camera does not work
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-cameras-of-the-same-model-are-not-recognized" class="md-nav__link">
+    Multiple cameras of the same model are not recognized
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-camera-is-not-recognized" class="md-nav__link">
+    Virtual camera is not recognized
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-i-use-a-black-white-camera" class="md-nav__link">
+    Can I use a black-white camera?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ar-marker-is-not-recognized" class="md-nav__link">
+    AR marker is not recognized
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-calibration-of-extrinsic-parameters-does-not-work" class="md-nav__link">
+    Camera calibration of extrinsic parameters does not work
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#it-does-not-capture-even-after-camera-calibration" class="md-nav__link">
+    It does not capture even after camera calibration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#does-it-support-capturing-multi-person" class="md-nav__link">
+    Does it support capturing multi-person?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vmt-doesnt-work" class="md-nav__link">
+    VMT doesn't work
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-motion-of-virtual-trackers-are-wrong" class="md-nav__link">
+    The motion of Virtual trackers are wrong
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#there-is-no-serial-number-input-field" class="md-nav__link">
+    There is no serial number input field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#difference-between-mocapforall-and-others" class="md-nav__link">
+    Difference between MocapForAll and others
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -859,8 +878,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../acknowledgement/" class="md-nav__link">
-        謝辞
+      <a href="../acknowledgement/" class="md-nav__link">
+        Acknowledgements
       </a>
     </li>
   
@@ -879,107 +898,56 @@
               
                 
                 
-                <h1 id="_1">カメラ校正の実施</h1>
-<h2 id="_2">内部パラメータの取得</h2>
+                <h1 id="faq">FAQ</h1>
+<h2 id="the-camera-does-not-work">The camera does not work</h2>
 <ul>
-<li><a href="https://raw.githubusercontent.com/Akiya-Research-Institute/MocapForAll-Wiki/main/resources/calibration/IntrinsicCalibration.png">この画像</a>を任意のアプリで画面にできるだけ大きく表示します。</li>
-<li>MocapForAllで「Camera &gt; Calibration &gt; Intrinsic」の下の「Start」ボタンをクリックします。  </li>
-<li>10秒間程度、さまざまな角度からカメラで画像を写してください。カメラを固定済みの場合は、カメラでなく画像の方を動かします。  </li>
+<li>Select UE4 media player in <a href="../how-to-capture/calibrate-cameras/connect-cameras/#select-camera-control-framework">Select camera control framework</a><ul>
+<li>Try selecting different formats in "Image size"</li>
 </ul>
-<p>カメラ校正が完了すると、アプリの画面上に内部パラメータが表示され、「Intrinsic  ☑Calibrated」となります。</p>
-<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Intrinsic-Execution.gif" /></p>
-<p>完了したら「Save」からカメラ校正結果を保存しておきます。</p>
-<h2 id="_3">外部パラメータの取得</h2>
-<p>先に説明した<a href="../what-is-camera-calibration/#4">外部パラメータの取得の4つの方式</a>により、手順が異なります。</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ChArUcoボードを使うやり方  </label><label for="__tabbed_1_2">ArUcoクラスターを使う方法 </label><label for="__tabbed_1_3">Diamondクラスターを使う方法</label><label for="__tabbed_1_4">人の動きを使う方法</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+</li>
+<li>Select Direct Show in Select camera control framework<ul>
+<li>Select proper image size based on the camera specification</li>
+</ul>
+</li>
+</ul>
+<p>If none of these work, unfortunately MocapForAll will not be able to use the camera.</p>
+<h2 id="multiple-cameras-of-the-same-model-are-not-recognized">Multiple cameras of the same model are not recognized</h2>
+<p>When connecting multiple cameras of the same model to a PC, there is a problem that some of them are not displayed (not detected) in the pull-down of camera selection in the app. In that case, try setting an arbitrary FriendlyName from the registry editor to the camera device that is not displayed.<br />
+The method of setting / changing the FriendlyName differs depending on your environment, so please google it yourself. Since you are editing the registry, it is recommended to make a backup.  </p>
+<h2 id="virtual-camera-is-not-recognized">Virtual camera is not recognized</h2>
+<p>The default virtual camera in OBS does not work. Install <a href="https://obsproject.com/forum/resources/obs-virtualcam.539/">OBS-VirtualCam plugin</a> and select Direct Show in <a href="../how-to-capture/calibrate-cameras/connect-cameras/#select-camera-control-framework">camera control framework</a>.</p>
+<h2 id="can-i-use-a-black-white-camera">Can I use a black-white camera?</h2>
+<p>No, you can't use a monochrome camera with this app. Please use an RGB camera. </p>
+<h2 id="ar-marker-is-not-recognized">AR marker is not recognized</h2>
 <ul>
-<li><a href="../prepare-markers/#_3">外部パラメータの取得で使う画像の印刷</a>で印刷した画像を床に置きます。これがモーションキャプチャの原点になります。   </li>
-<li>床に置いた画像が見える場所にカメラを設置します。  </li>
-<li>MocapForAllで「Settings &gt; Calibration &gt; Extrinsic calibration method」で「<strong>ChArUco board (default)</strong>」を選択します。</li>
-<li>「Camera &gt; Calibration &gt; Extrinsic」の下の「Start」ボタンをクリックします。</li>
+<li>Make sure the camera image is <a href="../how-to-capture/calibrate-cameras/connect-cameras/">not a mirror image.</a></li>
+<li>Make sure the camera image is in focus on the AR marker.</li>
+<li>Make sure the AR marker is large enough in the camera image.<ul>
+<li>Printing a larger size of the AR marker may help</li>
+<li>For camera calibration of extrinsic parameters, see <a href="../how-to-capture/calibrate-cameras/execute-calibration/#if-the-marker-cannot-be-read-properly">If the marker cannot be read properly</a> section.</li>
 </ul>
-<p>キャリブレーションが完了すると、外部パラメータが表示され、「Extrinsic  ☑Calibrated」となります。</p>
-<div class="admonition tip">
-<p class="admonition-title">マーカの読み取りがうまく実施できない場合は、<a href="#_4">マーカをうまく読み取れない場合</a>を試してみてください。</p>
-</div>
-<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Extrinsic-Execution-Charuco.gif" /></p>
-</div>
-<div class="tabbed-block">
+</li>
+</ul>
+<h2 id="camera-calibration-of-extrinsic-parameters-does-not-work">Camera calibration of extrinsic parameters does not work</h2>
+<p>See <a href="../how-to-capture/calibrate-cameras/execute-calibration/#if-the-marker-cannot-be-read-properly">If the marker cannot be read properly</a> section.</p>
+<h2 id="it-does-not-capture-even-after-camera-calibration">It does not capture even after camera calibration</h2>
 <ul>
-<li><a href="../prepare-markers/#_3">外部パラメータの取得で使う画像の印刷</a>で印刷した画像を床に置きます。「arucoMarker0.png」がモーションキャプチャの原点になります。  </li>
-<li>床に置いた画像が見える場所にカメラを設置します。  </li>
-<li>MocapForAllで「Settings &gt; Calibration &gt; Extrinsic calibration method」で「<strong>ArUco cluster</strong>」を選択します。</li>
-<li>「Camera &gt; Calibration &gt; Extrinsic」の下の「Scan markers」ボタンをクリックします。マーカの位置関係がスキャンされ、しばらくすると3Dビューポート上にマーカが表示されます。</li>
-<li>マーカがスキャンできたら「Stop scanning」をクリックし、次に「Start」ボタンをクリックします。</li>
+<li>At the start of capture, only a person standing upright can be recognized. So, <a href="../how-to-capture/calibrate-cameras/connect-cameras/">rotate the image appropriately according to the actual orientation of the camera.</a></li>
+<li>Make sure that two or more cameras that have been calibrated can see your whole body.</li>
+<li>It will not work if the final frame rate is below 4 fps. <a href="../how-to-capture/adjust-settings/optimize-performance/#check-the-frame-rate">Check the frame rate</a>.</li>
 </ul>
-<p>キャリブレーションが完了すると、外部パラメータが表示され、「Extrinsic  ☑Calibrated」となります。</p>
-<div class="admonition tip">
-<p class="admonition-title">マーカの読み取りがうまく実施できない場合は、<a href="#_4">マーカをうまく読み取れない場合</a>を試してみてください。</p>
-</div>
-<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Extrinsic-Execution-Aruco.gif" /></p>
-</div>
-<div class="tabbed-block">
+<h2 id="does-it-support-capturing-multi-person">Does it support capturing multi-person?</h2>
+<p>No, currently only one person can be captured. Therefore, only one person should be shown on the camera.  </p>
+<h2 id="vmt-doesnt-work">VMT doesn't work</h2>
+<p>Check errors in VMT Manager. Especially, check if <a href="https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/trouble/#room-matrix-is-not-set">Room Matrix</a> is set.</p>
+<h2 id="the-motion-of-virtual-trackers-are-wrong">The motion of Virtual trackers are wrong</h2>
+<p>Make sure that the <a href="../how-to-export/to-steamvr/#align-coordinates-of-steamvr-and-mocapforall">alignment of coordinates between SteamVR and MocapForAll</a> is correct.</p>
+<h2 id="there-is-no-serial-number-input-field">There is no serial number input field</h2>
+<p>Please install the latest MocapForAll. From version 1.0 and above, you do not need to input the HMD serial number.  </p>
+<h2 id="difference-between-mocapforall-and-others">Difference between MocapForAll and others</h2>
 <ul>
-<li><a href="../prepare-markers/#_3">外部パラメータの取得で使う画像の印刷</a>で印刷した画像を、カメラのフレームに収まる程度の距離をおいて配置します。同一平面内にある必要はありません。「diamondMarker0.png」がモーションキャプチャの原点になるので、これは床面に置きます。</li>
-<li>MocapForAllで「Settings &gt; Calibration &gt; Extrinsic calibration method」で「<strong>Diamond cluster</strong>」を選択します。  </li>
-<li>任意のカメラの一つで「Camera &gt; Calibration &gt; Extrinsic」の下の「Scan markers」ボタンをクリックします。そのカメラで、「diamondMarker0.png」を映します。次に「diamondMarker0.png」といずれかのマーカを同時に映してしばらくその状態を維持します。しばらくすると「diamondMarker0.png」を原点としてもう一つのマーカの位置が確定し、当該マーカが3Dビューポート上に表示されます。</li>
-<li>位置が確定済みのマーカと位置が未確定のマーカについて、上記の作業を繰り返し、全マーカの位置が確定したら「Stop scanning」をクリックします。</li>
-<li>位置が確定済みのマーカが映る位置にカメラを設置し、「Camera &gt; Calibration &gt; Extrinsic」の下の「Start」ボタンをクリックします。 </li>
+<li><a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/advanced/3d_reconstruction_module.md">OpenPose</a>： The basic idea is similar, but the licenses are very different. Basically, you can use OpenPose only for "ACADEMIC OR NON-PROFIT ORGANIZATION NONCOMMERCIAL RESEARCH USE ONLY"</li>
 </ul>
-<p>キャリブレーションが完了すると、外部パラメータが表示され、「Extrinsic  ☑Calibrated」となります。 </p>
-<div class="admonition tip">
-<p class="admonition-title">マーカの読み取りがうまく実施できない場合は、<a href="#_4">マーカをうまく読み取れない場合</a>を試してみてください。</p>
-</div>
-<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Extrinsic-Execution-Diamond.gif" /></p>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>少なくとも二つのカメラが同時に人を映せるようにカメラを設置します。</li>
-<li>MocapForAllで「Settings &gt; Calibration &gt; Extrinsic calibration method」で「<strong>Human motion</strong>」を選択します。  </li>
-<li>ハードウェアが対応していれば、「Settings &gt; General &gt; Run DNN on」を「<strong>GPU_DirectML</strong>」にします。（AppendixのTensorRTモードをインストール済みの場合は「GPU_TensorRT」でもOKです）  </li>
-<li>ハードウェアの性能が許せば、「Settings &gt; General &gt; Capture body」を「<strong>Speed</strong>」に設定します。（AppendixのPrecisionモードをインストール済みの場合は「Precision」でもOKです）</li>
-<li><strong>ウィンドウ上部の「Start calibration」ボタン</strong>をクリックし、全身がカメラに映る場所を歩き回ってください。  </li>
-<li>カメラに同時に映る人体の関節位置からカメラの相対位置が決定され、一つ目のカメラを基準にして外部パラメータが決定されます。全カメラの外部パラメータが決定され、「Extrinsic ☑Calibrated」となります。  </li>
-</ul>
-<p>最後に、次に説明する<a href="#_4">マーカをうまく読み取れない場合</a>と同じように、ウィンドウ上部の「Find Ground」ボタンをクリックして適当に歩きまわり、カメラの絶対位置を決定します。</p>
-<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Extrinsic-Execution-Human.gif" /></p>
-</div>
-</div>
-</div>
-<h3 id="_4">マーカをうまく読み取れない場合</h3>
-<details class="tip">
-<summary>マーカを壁に掛けて校正を行う</summary>
-<p>マーカの位置がキャプチャ結果の高さゼロの面となるため、基本的にマーカは床に置くことを推奨していますが、カメラの性能や配置によっては床においたマーカを読み取ることが難しい場合があります。</p>
-<p>そのような場合、<strong>マーカを壁に掛けてカメラ校正を行い、床面の位置はあとから調整</strong>することができます。</p>
-<p>手順：</p>
-<ul>
-<li>印刷した画像を「床に置き」となっているところを「<strong>適当な壁に掛け</strong>」に読み替えてカメラ校正を実施します。</li>
-<li>ハードウェアが対応していれば、「Settings &gt; General &gt; Run DNN on」を「<strong>GPU_DirectML</strong>」にします。（AppendixのTensorRTモードをインストール済みの場合は「GPU_TensorRT」でもOKです）<br />
-ハードウェアの性能が許せば、「Settings &gt; General &gt; Capture body」を「<strong>Speed</strong>」に設定します。（AppendixのPrecisionモードをインストール済みの場合は「Precision」でもOKです）</li>
-<li>ウィンドウ上部の「<strong>Find Ground</strong>」をクリックし、全身が複数のカメラに映る場所を歩き回ります。しばらくすると、自動的に床面の位置が調整されます。</li>
-</ul>
-<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Extrinsic-Execution-FindGround.gif" /></p>
-</details>
-<h3 id="_5">カメラ校正結果の確認</h3>
-<p><a href="../prepare-markers/#_4">マーカの準備</a>で正しい値を入力していれば、3Dビューポート上でカメラの位置を確認できます。<br />
-MocapForAll上で視点を移動するには、キーボードのW・A・S・Dキーとマウスのドラッグを使用します。
-<img src="../../../images/App-wasd.png" alt="App-wasd" style="zoom:50%;" />  </p>
-<div class="admonition warning">
-<p class="admonition-title">カメラが床より下にある場合</p>
-<p>カメラが床より下の位置に表示される場合がある可能性があることに注意してください。（この場合、カメラ校正が失敗しています）</p>
-</div>
-<h2 id="_6">結果の保存と読み込み</h2>
-<p><img alt="" loading="lazy" src="../../../images/Camera-Calibration-Save.gif" /></p>
-<h3 id="_7">各カメラ</h3>
-<p>カメラ校正が完了したら、「Camera &gt; Calibration &gt; Intrinsic」と「Extrinsic」の下の「Save」から、各カメラの校正結果を保存しておきます。保存した結果は「Load」から読み込むことができます。</p>
-<h3 id="_8">全カメラ</h3>
-<p>ウィンドウ上部の「Save All Cameras」ボタンと「Load All Cameras」ボタンをクリックして、カメラ設定全体を保存およびロードできます。</p>
-<div class="admonition warning">
-<p class="admonition-title">全カメラ保存時の注意</p>
-<p>「Save All Cameras」では、カメラの選択はプルダウン内の何番目かという情報で保存されることに注意してください。 PCからカメラを取り外すと、プルダウン内のカメラの順序が変わり、カメラを正しくロードできなくなります。</p>
-</div>
                 
               
               
@@ -996,32 +964,32 @@ MocapForAll上で視点を移動するには、キーボードのW・A・S・D�
         
 <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="フッター">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../connect-cameras/" class="md-footer__link md-footer__link--prev" aria-label="前: カメラの接続" rel="prev">
+        <a href="../other-settings/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Others" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                前
+                Previous
               </span>
-              カメラの接続
+              Others
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../adjust-settings/adjust-scales/" class="md-footer__link md-footer__link--next" aria-label="次: スケールの調整" rel="next">
+        <a href="../acknowledgement/" class="md-footer__link md-footer__link--next" aria-label="Next: Acknowledgements" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                次
+                Next
               </span>
-              スケールの調整
+              Acknowledgements
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1087,10 +1055,10 @@ MocapForAll上で視点を移動するには、キーボードのW・A・S・D�
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "translations": {"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>

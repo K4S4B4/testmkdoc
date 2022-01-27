@@ -27,7 +27,7 @@ If you have a GPU, it is highly recommended to select **`GPU_DriectML`** from `S
 
     - GPU_TensorRT:  
       TensorRT provides GPU acceleration on supported NVIDIA GPUs.
-      To use this, you need to [install CUDA, cuDNN, TensorRT](../../../how-to-install/install-tensorrt), and [`Appendix4_TensorRT_mode`](../../../how-to-install/from-booth/#appendix-optional).
+      To use this, you need to [install CUDA, cuDNN, TensorRT](../../../how-to-install/install-tensorrt), and [`Appendix4_TensorRT_mode`](../../../how-to-install/install-mocapforall).
 
 ## Select capturing mode
 
@@ -35,7 +35,7 @@ From `Settings > General > Capture body`, you can choose what to prioritize.
 
 - In many cases, **`Speed`** is recommended.
 - `Speed+` is recommended when using a PC with low performance such as a laptop PC or when using together with a very heavy VR application.  
-- Use `Precision` mode when you want to capture motion precisely such as for movie production. You need to install [`Appendix1_Precision_mode`](../../../how-to-install/from-booth/#appendix-optional).
+- Use `Precision` mode when you want to capture motion precisely such as for movie production. You need to install [`Appendix1_Precision_mode`](../../../how-to-install/install-mocapforall).
 
 ## Reduce drawing
 

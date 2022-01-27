@@ -91,7 +91,7 @@ nav:
   - インストール方法:
     - how-to-install/install-mocapforall.md
     - how-to-install/install-tensorrt.md
-  - キャプチャ方法:
+  - キャプチャー方法:
     - how-to-capture/get-cameras.md
     - カメラ校正:
       - how-to-capture/calibrate-cameras/what-is-camera-calibration.md
@@ -112,5 +112,5 @@ nav:
     - other-settings/capture-hand-and-face.md
     - other-settings/capture-from-recorded-video.md
     - other-settings/index.md
-
-
+  - faq.md
+  - acknowledgement.md

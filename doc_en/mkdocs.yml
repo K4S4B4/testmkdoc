@@ -112,5 +112,5 @@ nav:
     - other-settings/capture-hand-and-face.md
     - other-settings/capture-from-recorded-video.md
     - other-settings/index.md
-
-
+  - faq.md
+  - acknowledgement.md

@@ -1,37 +1,38 @@
-# Others
+# その他
 
-## Lock-on to the character
+## キャラクターへの視点の追随
 
-- Turn on `Settings > General > Look at character` to make the view follow the movement of the character.
+- 「Settings > General > Look at character」をオンにすると、視点がキャラクターの動きに追随します
 
-## Display the tracking positions
+## トラッキング位置の表示・非表示
 
-- Turn on `Settings > General > Draw tracking points` to show the yellowish cubes to display the tracking positions.
+- 「Settings > General > Draw tracking points」で、トラッキング位置を表す黄色い四角形の表示をオンオフできます
 
-## Language
+## 言語
 
-- You can change the language from the earth icon on the upper right corner of the window. Currently, Japanese, English, and French are supported.
+- 画面右上の地球のアイコンから、使用する言語を設定できます。現状、日本語、英語、フランス語に対応しています。
 
-## Reset all the settings
+## 設定のリセット
 
-Delete `C:\Users\\[User name]\AppData\Local\MocapForAll` to reset all the settings
+すべての設定をリセットするには、「C:\Users\【ユーザ名】\AppData\Local\MocapForAll」を削除します。  
+MocapForAllが何らかの原因で起動しなくなった場合、設定をリセットすると起動することがあります。
 
-If MocapForAll does not launch for some reason, resetting the settings may solve the problem.
+## 起動時にコマンドライン引数で動作を指定する
 
-## Execute some actions at startup by command line arguments
+下記の語句を引数に指定することで、起動時に特定の動作を実行させることができます。  
 
-From v1.13, you can execute a specific operation at startup by specifying the following phrase in the arguments. 
+- 「StartCapture」： 起動直後に「Start Capture」ボタンを押したときと同じ動作をします。
+- 「LoadAllCameras」： 起動直後に「LoadAllCameras」ボタンを押したときと同じ動作をします。
 
-- `StartCapture`:  Execute the same process as `Start Capture` button is pressed immediately after startup.
-- `LoadAllCameras`: Execute the same process as `Load All Cameras` button is pressed immediately after startup.
-
-Example:
+使用例：
 
 ![](../images/App-Commandline-Args.png){ loading=lazy }
 
-## Apply motion only to the upper body
+## 上半身のみへのモーション適用
 
-With the following settings, the motion will be applied only to the upper body of the character.  
-- Turn off `Settings > General > Capture body > Apply to lower body`.
+下記の設定により、キャラクターの上半身のみにモーションを適用するようになります。
 
-The lower body stops at the position of the last frame, so adjust the relative position of the upper and lower body with `Settings> Coordinates` if necessary.  
+- "Settings > General > Capture body > Apply to lower body" をオフにする。
+
+下半身は前フレームの位置で停止するので、必要に応じて "Settings > Coordinates" で上半身と下半身の相対位置を調整してください。  
+なお、内部の処理としては単に下半身へのモーションの適用を停止しているだけです。

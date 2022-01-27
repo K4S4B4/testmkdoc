@@ -1,19 +1,20 @@
-# Capture from recorded video
+# 録画した動画からのキャプチャ
 
-From v1.12, you can capture motion using recorded videos.
+v1.12から、録画済みの動画を使ってモーションキャプチャできるようになりました。
 
-## How to use
+## 使い方
 
-- Select `Recorded video` from the `▼` next to `Add camera` at the top of the MocapForAll window.   
-- Press the `...` button and select the video file.  
-- After that, the usage is basically the same as a normal webcam.
+- MocapForAllのウィンドウ上部の「Add camera」の横の「▼」から、「Recorded video」を選択します。
+- 「...」ボタンを押し、動画ファイルを選択します。
+- 以降の基本的な使い方は、通常のウェブカメラと同様です。
 
-## Playback positions
+## 再生位置の挙動
 
-- The video will automatically loop.
-- The playback position of the video will return to the beginning of the video when you press `Start Capture`.
+- 動画は自動的にループ再生されます。
+- 動画の再生位置は、「Start Capture」を押すと動画の先頭に戻ります。
 
 ## Tips
 
-- It is recommended to separate the video files for intrinsic parameter calibration, extrinsic parameter calibration, and actual motion capture.
-- There is no function to analyze the videos and synchronize the movements between them, so it is necessary to edit the videos in advance so that the movements will be synchronized when they are played at the same time from the beginning. When recording videos, it is recommended to clarify the starting point with a clapperboard or the sound of clapping your hands.
+- 内部パラメータのカメラ校正用、外部パラメータのカメラ校正用、実際のモーションキャプチャ用で、分けて動画ファイルにしておくのがおすすめです。
+    - 内部パラメータの校正が終わったら「...」ボタンを押して外部パラメータ用の動画を開き、外部パラメータの校正が終わったら再度「...」ボタンを押して実際のモーションキャプチャ用の動画を開き、といった流れ。
+- 再生された中身を解析してカメラ間で動きを同期させる仕組みは**ない**ので、モーションキャプチャ用の動画は、先頭から同時再生すれば動きが同期するよう、事前に編集しておく必要があります。撮影時に、カチンコや手を叩く音などで同期点を明確にしておくのがおすすめです。

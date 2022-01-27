@@ -1,55 +1,50 @@
----
-title: Export to VMC marionette
----
+# VMC互換アプリへの連携
 
-# Export motion to apps which accept VMC protocol
+VMCプロトコルを介して、様々なアプリケーションに情報を連携することができます。動作確認済みのアプリケーションは下記の通りです。
 
-You can send the captured motion to various applications via VMC protocol. The following are confirmed to work:
+- [VirtualMotionCapture](https://vmc.info/)へのトラッカーの送信
+- [VSeeFace](https://www.vseeface.icu/)へのボーンの送信、VSeeFaceからの表情モーフの受信
+- [EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)へのボーンと表情モーフの送信
+- [VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)へのボーンと表情モーフの送信
+- [VMC4B](https://tonimono.booth.pm/items/3432915)へのボーンの送信
 
-- Sending tracker to [VirtualMotionCapture](https://vmc.info/)
-- Sending bones to [VSeeFace](https://www.vseeface.icu/), and receiving facial expression morphs from VSeeFace
-- Sending bones and facial expression morphs to [EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)
-- Sending bones and facial expression morphs to [VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)
-- Sending bones to [VMC4B](https://tonimono.booth.pm/items/3432915)
+## VRMモデル読み込み
 
-## Load VRM models
+- キャプチャを停止します。
+- VRMファイルをMocapForAllのウィンドウにドラッグ&ドロップします。
 
-- Stop capturing
-- Drag and drop the VRM file into the MocapForAll window
+!!! Info "注意"
+    宛先のアプリと同じVRMモデルを読み込んでください。
 
-!!! Info "Notice"
-    Load the same VRM model with the destination app.  
-
-!!! Question "Direct or Indirect mode?"
-    Try Direct mode first. Indirect mode is only for models which do not work with Direct mode properly.
+!!! Question "直接モードと間接モード"
+    直接モードをまず試してください。間接モードは直接モードで動作しないモデルのための回避策です。
 
 ![](../../images/Settings-General-Character-VRM.gif){ loading=lazy }
 
-## Settings to send data
+## 送信設定
 
 ![](../../images/Settings-DataExport-VMC.png){ loading=lazy }
 
-- Set `Settings > Data export > Destination IP address for VMT and VMC` as follows:
-    - If the destination is the same PC: `127.0.0.1`
-    - If the destination is another PC: `IP address of the destination PC`
-        - You can check it by typing `ipconfig /all` in the command prompt
-- Turn on `Settings > Data export > VMC protocol > Send bones`
-- Set the port of `Settings> Data export> VMC protocol> Send tracking points` according to the destination port.
+- 「Settings > Data export > Destination IP address for VMT and VMC」を下記の通り設定します
+    - 送信先が同じPCの場合：「127.0.0.1」
+    - 送信先が別のPCの場合： 送信先のデバイスのIPアドレス
+- 「Settings > Data export > VMC protocol > Send bones」をオンにします
+- 「Settings > Data export > VMC protocol > Send bones」のポートを、送信先のポートに合わせて設定します
 
-!!! Info "Advanced setting: `As trackers`"
-    If you want to send as trackers (/VMC/Ext/Tra/Pos), not bones (/VMC/Ext/Bone/Pos), set the following:  
-    (For example, this setting is required to send data to VirtualMotionCapture.)
+??? Tip "トラッカーとして送信"
+    ボーン（/VMC/Ext/Bone/Pos）としてではなく、トラッカー（/VMC/Ext/Tra/Pos）としてデータを送信したい場合は、下記を設定します。  
+    （例えば、VirtualMotionCaptureにデータを送信するにはこの設定が必要です）
 
-    - Turn on `Settings > Data export > VMC protocol > Send bones > As trackers (/VMC/Ext/Tra/Pos)`
+    - 「Settings > Data export > VMC protocol > Send bones > As trackers (/VMC/Ext/Tra/Pos) 」をオンにします
 
-## Settings to receive and send facial expressions
+## 表情の受信・送信
 
-To receive facial expression morph data, set as follows:
+表情モーフデータを受信するには、下記の通り設定します。
 
-- Turn on `Settings > Data export > VMC protocol > Receive facial morphs`
-- Set the port of `Settings > Data export > VMC protocol > Receive facial morphs` according to the destination port specified by the source app.
-- Set `Settings > Data export > VMC protocol > Receive facial morphs > From other device` as follows:
-    - If the source app is running on the same PC: `Off`
-    - If the source app is running on other device: `On`
+- 「Settings > Data export > VMC protocol > Receive facial morphs」をオンにします
+- 「Settings > Data export > VMC protocol > Receive facial morphs」のポートを、送信元のアプリが指定している送信先ポートに合わせて設定します
+- 「Settings > Data export > VMC protocol > Receive facial morphs > From other device」を下記の通り設定します。
+    - 送信元が同じPCの場合：オフ
+    - 送信元が別のデバイスの場合：オン
 
-The received facial expression morph data will be sent as it is if [Settings to send data](#settings-to-send-data) is set.
+受信した表情モーフデータは、[送信設定](#_1)がされていれば、そのまま送信されます。

@@ -317,7 +317,7 @@
   
     <li class="md-nav__item">
       <a href="../../../how-to-install/install-mocapforall/" class="md-nav__link">
-        MocapForAllのインストール方法
+        MocapForAllのインストール
       </a>
     </li>
   
@@ -363,14 +363,14 @@
       
       
         <label class="md-nav__link" for="__nav_3">
-          キャプチャ方法
+          キャプチャー方法
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="キャプチャ方法" data-md-level="1">
+      <nav class="md-nav" aria-label="キャプチャー方法" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          キャプチャ方法
+          キャプチャー方法
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -561,7 +561,7 @@
   
     <li class="md-nav__item">
       <a href="../../adjust-settings/adjust-scales/" class="md-nav__link">
-        Adjust scales
+        スケールの調整
       </a>
     </li>
   
@@ -575,7 +575,7 @@
   
     <li class="md-nav__item">
       <a href="../../adjust-settings/adjust-animation/" class="md-nav__link">
-        Adjust animation
+        動きの加工の調整
       </a>
     </li>
   
@@ -589,7 +589,7 @@
   
     <li class="md-nav__item">
       <a href="../../adjust-settings/optimize-performance/" class="md-nav__link">
-        Optimize performance
+        パフォーマンス最適化
       </a>
     </li>
   
@@ -644,7 +644,7 @@
   
     <li class="md-nav__item">
       <a href="../../../how-to-export/to-steamvr/" class="md-nav__link">
-        Export to SteamVR
+        SteamVRへの連携
       </a>
     </li>
   
@@ -658,7 +658,7 @@
   
     <li class="md-nav__item">
       <a href="../../../how-to-export/to-game-engines/" class="md-nav__link">
-        Export to game engines
+        ゲームエンジンへの連携
       </a>
     </li>
   
@@ -672,7 +672,7 @@
   
     <li class="md-nav__item">
       <a href="../../../how-to-export/to-vmc-marionette/" class="md-nav__link">
-        Export to VMC marionette
+        VMC互換アプリへの連携
       </a>
     </li>
   
@@ -686,7 +686,7 @@
   
     <li class="md-nav__item">
       <a href="../../../how-to-export/to-bvh-files/" class="md-nav__link">
-        Export to BVH files
+        BVH形式での書き出し
       </a>
     </li>
   
@@ -700,7 +700,7 @@
   
     <li class="md-nav__item">
       <a href="../../../how-to-export/to-shared-memory/" class="md-nav__link">
-        Export to shared memory
+        共有メモリへの出力
       </a>
     </li>
   
@@ -748,7 +748,7 @@
   
     <li class="md-nav__item">
       <a href="../../../other-settings/capture-hand-and-face/" class="md-nav__link">
-        Capture hand and face
+        手と顔のキャプチャ
       </a>
     </li>
   
@@ -762,7 +762,7 @@
   
     <li class="md-nav__item">
       <a href="../../../other-settings/capture-from-recorded-video/" class="md-nav__link">
-        Capture from recorded video
+        録画した動画からのキャプチャ
       </a>
     </li>
   
@@ -776,7 +776,7 @@
   
     <li class="md-nav__item">
       <a href="../../../other-settings/" class="md-nav__link">
-        Others
+        その他
       </a>
     </li>
   
@@ -785,6 +785,36 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../acknowledgement/" class="md-nav__link">
+        謝辞
+      </a>
     </li>
   
 
@@ -810,14 +840,28 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <p><img alt="" loading="lazy" src="../../../images/Camera-Add.gif" /></p>
 <ul>
 <li>
-<p>「Image size」横のボックスにサイズを入力し「Apply」をクリックすると、カメラの画像サイズを変更できます。（カメラが指定された画像サイズをサポートしている必要があります。）
-カメラの画像サイズの変更に失敗することがありますが、その場合はカメラを閉じてから少し待って、再度お試しください。</p>
+<p>「Image size」横のボックスにサイズを入力し「Apply」をクリックすると、カメラの画像サイズを変更できます。  </p>
+<div class="admonition warning">
+<p class="admonition-title">画像サイズ変更に失敗する場合</p>
+<ul>
+<li>カメラの画像サイズの変更に失敗することがありますが、その場合はカメラを閉じてから少し待って、再度お試しください。</li>
+<li>カメラが指定された画像サイズをサポートしている必要があります。</li>
+</ul>
+</div>
 </li>
 <li>
-<p>画像の左右反転ができます。一部のカメラはデフォルトで画像が鏡像になっていることに注意してください。画像が鏡像になっているとARマーカが読み込めません。</p>
+<p>画像の左右反転ができます。</p>
+<div class="admonition warning">
+<p class="admonition-title">鏡像では機能しません</p>
+<p>一部のカメラはデフォルトで画像が鏡像になっていることに注意してください。画像が鏡像になっているとARマーカが読み込めません。</p>
+</div>
 </li>
 <li>
-<p>画像の回転ができます。キャプチャ開始時点は人が真っすぐ立っている画像でなければ認識できないので、カメラの設置状況に合わせて画像を適切に回転しておいてください。</p>
+<p>画像の回転ができます。</p>
+<div class="admonition warning">
+<p class="admonition-title">適切な向きにしてください</p>
+<p>キャプチャ開始時点は人が真っすぐ立っている画像でなければ認識できないので、カメラの設置状況に合わせて画像を適切に回転しておいてください。</p>
+</div>
 </li>
 </ul>
 <h2 id="_3">カメラ制御フレームワークの選択</h2>
@@ -826,7 +870,7 @@ MocapForAllのウィンドウ上部の「Add camera」ボタンを使用する�
 <ul>
 <li><strong>Direct show:</strong> Microsoftのメディアフレームワーク。OBS-VirtualCamプラグインが使えます。</li>
 <li><strong>UE4 media player:</strong> UE4のメディアフレームワーク。高解像度での性能に優れています。一部のカメラは動作しないようです。</li>
-<li><strong>Recorded video</strong>: カメラの代わりに録画済みの動画を使用します。詳細は、<a href="../../other-settings/#motion-capture-from-recorded-videos">録画した動画からモーションキャプチャする</a>を参照してください。</li>
+<li><strong>Recorded video</strong>: カメラの代わりに録画済みの動画を使用します。詳細は、<a href="../../../other-settings/capture-from-recorded-video">録画した動画からモーションキャプチャする</a>を参照してください。</li>
 </ul>
 <p>UE4 media playerで動作するカメラならば、そちらがおすすめです。動作しない場合はDirect Showを使いましょう。</p>
                 

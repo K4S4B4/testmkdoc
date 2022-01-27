@@ -789,6 +789,36 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../acknowledgement/" class="md-nav__link">
+        Acknowledgements
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -810,14 +840,25 @@ Select the combo box next to <code>Camera:</code> to find the connected camera. 
 <p><img alt="" loading="lazy" src="../../../images/Camera-Add.gif" /></p>
 <ul>
 <li>
-<p>You can change the image size of the camera by entering the dimensions and clicking <code>Apply</code> if camera supports the specified image size.
-Somtimes it fails to change the image size. In that case, please close camera, wait for a moment, and try again.</p>
+<p>You can change the image size of the camera by entering the dimensions and clicking <code>Apply</code> if camera supports the specified image size.</p>
+<div class="admonition warning">
+<p class="admonition-title">If it fails to change image size</p>
+<p>Somtimes it fails to change the image size. In that case, please close camera, wait for a moment, and try again.</p>
+</div>
 </li>
 <li>
-<p>You can flip the image horizontally. Note that some cameras have a mirror image by default. If the image is a mirror image, the AR marker cannot be read.  </p>
+<p>You can flip the image horizontally.</p>
+<div class="admonition warning">
+<p class="admonition-title">Flip image if necessary</p>
+<p>Some cameras have a mirror image by default. If the image is a mirror image, the AR marker cannot be read.</p>
+</div>
 </li>
 <li>
-<p>You can rotate the image. At the start of capture, only a person standing upright can be recognized. So, rotate the image appropriately according to the actual orientation of the camera.</p>
+<p>You can rotate the image. </p>
+<div class="admonition warning">
+<p class="admonition-title">Rotate camera properly</p>
+<p>At the start of capture, only a person standing upright can be recognized. So, rotate the image appropriately according to the actual orientation of the camera.</p>
+</div>
 </li>
 </ul>
 <h2 id="select-camera-control-framework">Select camera control framework</h2>
@@ -826,7 +867,7 @@ Somtimes it fails to change the image size. In that case, please close camera, w
 <ul>
 <li><strong>Direct show:</strong> Microsoft's media framework. You can use the OBS-VirtualCam plugin with this.</li>
 <li><strong>UE4 media player:</strong> UE4's media framework. Better performance at high resolution. Some cameras don't work with this.</li>
-<li><strong>Recorded video</strong>: Use recorded video instead of camera. See <a href="../../other-settings/#motion-capture-from-recorded-videos">Motion capture from recorded videos</a>.</li>
+<li><strong>Recorded video</strong>: Use recorded video instead of camera. See <a href="../../../other-settings/capture-from-recorded-video">Motion capture from recorded videos</a>.</li>
 </ul>
 <p>If the camera works with UE4 media player, it is recommended to use it. If it doesn't work, use Direct Show.</p>
                 

@@ -1,52 +1,52 @@
-# Optimize performance 
+# パフォーマンス最適化
 
-Setup to reduce the CPU / GPU usage according to your environment and purpose.
+使用するPC環境と用途にあわせて、負荷を下げるよう設定します。
 
 ![](../../images/Settings-General+Performance.png){ loading=lazy }
 
-## Check the frame rate
+## フレームレートの確認
 
-Turn on `Settings > Performance > Show frame rate` to display current frame rate at the bottom of the window.
+「Settings > Performance > Show frame rate」を**オン**にすると、現在のフレームレートがウィンドウ下部に表示されます。 
 
-## Use GPU
+## GPUの使用
 
-MocapForAll uses AI to estimate a person's pose. AI calculations are often faster on the GPU than on the CPU.  
-If you have a GPU, it is highly recommended to select **`GPU_DriectML`** from `Settings > General > Run DNN on`.
+MocapForAllではAIを使って人の姿勢を推定しています。AIの計算は、多くの場合、CPUよりGPUを使う方が高速です。
+GPUが搭載されたPCを使っている場合、「Settings > General > Run DNN on」で「**GPU_DriectML**」を選択することを強くおすすめします。
 
-!!! Tip "Select from multiple GPUs"
-    If you have multiple GPUs, you can also choose which GPU to use by `Settings > General > Run DNN on > GPU`.
+!!! Tip "複数GPUからの選択"
+    GPUが複数ある場合は、どのGPUを使うかを「Settings > General > Run DNN on > GPU」で設定できます。
 
-!!! Question "Should I use TensorRT?"
-    When using a GPU, you have two options, `GPU_DriectML` or `GPU_TensorRT`.  
-    TensorRT is difficult to install, takes a long time to load, and has little reward. So, it is recommended to use `GPU_DriectML` in many cases.
+!!! Question "TensorRTを使うべきか"
+    GPUを使う場合、「GPU_DriectML」と「GPU_TensorRT」の二つの選択肢があります。  
+    TensorRTは環境準備が大変かつ読み込み時間が長く、それでいて見返りが少ないため、多くの場合「**GPU_DriectML**」 の使用をおすすめします。
 
     - GPU_DriectML:  
-      DirectML provides GPU acceleration on DirectX 12 capable GPUs. Examples of compatible hardware include:
-        - NVIDIA Kepler (GTX 600 series) and above
-        - AMD GCN 1st Gen (Radeon HD 7000 series) and above
+      DirectMLは、DirectX12対応GPUでGPUアクセラレーションを可能にします。使用可能なハードウェアの例は次の通りです。
+      - NVIDIA Kepler（GTX 600シリーズ）以降
+      - AMD GCN 1st Gen（Radeon HD 7000シリーズ）以降
 
     - GPU_TensorRT:  
-      TensorRT provides GPU acceleration on supported NVIDIA GPUs.
-      To use this, you need to [install CUDA, cuDNN, TensorRT](../../../how-to-install/install-tensorrt), and [`Appendix4_TensorRT_mode`](../../../how-to-install/from-booth/#appendix-optional).
+      TensorRTは、サポートされているNVIDIA製GPUでGPUアクセラレーションを可能にします。
+      これを使用するには、[CUDA、cuDNN、およびTensorRTをインストール](../../../how-to-install/install-tensorrt)した上で、[Appendix4_TensorRT_mode](../../../how-to-install/install-mocapforall/#_6)をインストールする必要があります。
 
-## Select capturing mode
+## 速度優先モード
 
-From `Settings > General > Capture body`, you can choose what to prioritize.
+「Settings > General > Capture body」から、何を優先して実行するかを設定できます。
 
-- In many cases, **`Speed`** is recommended.
-- `Speed+` is recommended when using a PC with low performance such as a laptop PC or when using together with a very heavy VR application.  
-- Use `Precision` mode when you want to capture motion precisely such as for movie production. You need to install [`Appendix1_Precision_mode`](../../../how-to-install/from-booth/#appendix-optional).
+- 多くの用途で「**Speed**」をおすすめします。
+- ノートPCなど性能が低いPCを利用している場合や、非常に重いVRアプリと併用する場合などは、「Speed+」をおすすめします。
+- 映像用途等で特に精度よくモーションキャプチャしたい場合には、「Precision」モードを使用します。「[Appendix1_Precision_mode](../../../how-to-install/install-mocapforall/#_6)」のインストールが必要です。
 
-## Reduce drawing
+## 描画の削減
 
-With the following settings, you can reduce the drawing on MocapForAll and reduce the CPU / GPU usage.
+下記の設定により、MocapForAll上での描画を減らし負荷を削減することができます。
 
-- Select **`Empty`** character in `Settings > General > Character`.
-- Select **`Minimum`** map in `Settings > General > Map`.
-- Set small value (30% for example) and turn **on** `Settings > Performance > Set screen percentage to`,  
-  or turn **off** `Settings > Performance > Render the viewport`
+- 「Settings > General > Character」で「**Empty**」キャラクターを選択します。
+- 「Settings > General > Map」で「**Minimum**」マップを選択します。
+- 「Settings > Performance > Set screen percentage to」を**オン**にし、小さな値 (たとえば 30%) を設定します。  
+  または、「Settings > Performance > Render the viewport」を**オフ**にします。
 
-## Limit the frame rate
+## フレームレート上限の設定
 
-Set the target frame rate (30FPS for example) and turn **on** `Settings > Performance > Limit framerate to:`.  
-MocapForAll runs up to this frame rate.
+- 「Settings > Performance > Limit framerate to:」を**オン**にし、目標とするフレームレート (たとえば 30FPS) を設定します。 
+    MocapForAllはこのフレームレートを上限として動作します。

@@ -1,24 +1,25 @@
-# Capture hand and face
-- Turn on `Settings > General > Capture hand` to capture finger movements
-- Turn on `Settings > General > Capture face` to capture facial expressions
+# 手と顔のキャプチャ
 
-Note that these are experimental features. The accuracy is low and CPU / GPU usage is high.
+- 「Settings > General > Capture hand」をオンにすると、指の動きをキャプチャします
+- 「Settings > General > Capture face」をオンにすると、顔の表情をキャプチャします
 
-## Cropping size for hand / face
+上記はいずれも実験的な機能です。処理負荷が高いこと、精度が低いことに注意してください。
 
-You can adjust the crop size of the image used to capture your hands and face from `Settings > Advanced > Cropping size for hand` and `Cropping size for face`. Since different people have different hand and face sizes, adjusting these values may improve accuracy.
+## キャプチャ時のトリミングのサイズ
 
-## Hand capture Full / Lite
+「Settings > Advanced > Cropping size for hand」と「Cropping size for face」から、手と顔のキャプチャ時に画像を切り抜いてAIへの入力とする際のサイズを設定できます。人によって手や顔の大きさが異なるため、この値を調整すると精度が向上することがあります。
 
-You can select the hand tracking model from Full, Lite or Legacy from the pulldown `Settings > General > Capture hand`.
+## 手のキャプチャの動作モード
 
-- `Full`: More accurate. Uses more CPU/GPU.
-- `Lite`: Less accurate. Uses less CPU/GPU.
-- `Legacy`: Uses the model used in v1.13 and before. For backward compatibility.
+「Settings > General > Capture hand」の右のプルダウンから、動作モードを変更できます。
 
-## Specify facial morph target names
+- 「Full」：処理負荷が少し高く、精度が高いモードです。
+- 「Lite」：処理負荷が少し低く、精度が低いモードです。
+- 「Legacy」：v1.13以前に使用していたAIで動作します。後方互換のためのものです。
 
-You can specify the names of facial morph targets if you are using VRM models.
+## 顔のモーフターゲット名の設定
 
-- Turn on `Settings > Advanced > Specify facial morph target names`
-- Input morph target names
+VRM モデルを使用している場合にのみ、顔のモーフターゲット名を指定することができます。
+
+- 「Settings > Advanced > Specify facial morph target names」をオンにします
+- 各モーフターゲットの名前を入力します。

@@ -1,46 +1,45 @@
-# Adjust animation
+# 動きの加工の調整
 
 ![](../../images/Settings-AnimationPostProcess.png){ loading=lazy }  
-The captured motion will be displayed on the screen after the following post processes.  
 
-## Whether to force feet to be grounded 
+キャプチャされた動きは、下記の加工がされたうえで画面に表示されます。好みに応じてそれらの調整を行います。　
 
-There is a function to control the positions of the feet so that they do not float in the air or sink into the floor.
+## 足の強制接地
 
-- If the **contact between feet and ground** is important to you, turn **on** `Settings > Animation Post Process > Force feet grouded`.
-- If the **natural movement of the whole leg** is important to you, turn **off** `Settings > Animation Post Process > Force feet grouded`.  
+足が地面にめり込んだり、地面から浮いたりしてしまわないよう、足が地面の近くにある場合はその位置を自動的に調整する機能があります。
 
-!!! Info "VR users can skip this"
-    Data **before** applying the above adjustment is exported when `Settings > Data export > VMT protocol > Send tracking points` is turned on.  
-    In other words, **if you use with VMT and SteamVR, you do not need to care about this setting.**
+- **足の接地感を重視**する場合は、「Settings > Animation Post Process > Force feet grouded」を**オン**にして上記機能を使用することをおすすめします。
+- **脚全体の動きを重視**する場合は、「Settings > Animation Post Process > Force feet grouded」を**オフ**にして上記機能を使用しないことをおすすめします。
 
-!!! Failure "If the feet stick to the ground"
-    The threshold of the distance between the foot and the ground to determine whether to apply this adjustment is automatically calculated using the value `Settings > Coordinates > Scale > Lower body`.  
-    If [Prepare marker](../../calibrate-cameras/prepare-markers/#measure-the-marker-size) was not done properly and the scale of `Lower body` was too big, the character's feet may not be able to get off the ground at all. In that case, redo [Prepare marker](../../calibrate-cameras/prepare-markers/#measure-the-marker-size) and [Execute calibration](../../calibrate-cameras/execute-calibration/#get-extrinsic-parameters), or turn off `Force feet grounded`.  
+!!! Info "VRユーザはスキップ可能です"
+    「Settings > Data export > VMT protocol > Send tracking points」をオンにしたときに送信されるデータは、上記の位置調整が適用される前のものです。（つまり、**VMTでVRアプリと組み合わせて使用する場合は、ここでの設定は関係ありません**）
+    上記以外の外部送信データは、上記の位置調整が適用された後のものです。
 
-## Adjust the smoothing
+!!! Failure "足が地面にくっつてしまう場合"
+    足がどれくらい地面に近い場合にこの位置調整が適用されるかは、「Settings > Coordinates > Scale > Lower body」に応じて自動的に設定されます。
+    [マーカのサイズの計測](../../calibrate-cameras/prepare-markers/#_4)が適切に行われず、上記「Lower body」に大きな値を設定してしまっていると、足が全く地面から離れなくなることがあります。その場合は、[マーカのサイズの計測](../../calibrate-cameras/prepare-markers/#_4)と[外部パラメータの取得](../../calibrate-cameras/execute-calibration/#_3)を再度実施するか、「Force feet grouded」をオフにしてください。
 
-There is a function to smooth the captured motion.  
-After applying this smoothing, data is exported externally.  
+## スムージングの調整
 
-### Turn on/off the smoothing
+キャプチャした動きを、時系列に沿ってスムージングする機能があります。  
+外部送信できる各種データは、全てこのスムージングが適用された後のものです。
 
-If the application that receive the captured motion performs its own smoothing, you may want to turn off the smoothing on the MocapForAll.  
-You can do it by turning off `Settings > Animation Post Process > Smoothing on body`, `Smoothing on finger` and `Smoothing on facial expression`.
+### スムージングのオンオフ
 
-### Adjust the smoothing intensity
+通常オンの状態で使用しますが、キャプチャ結果を利用するアプリケーションで独自にスムージングを行う場合は、MocapForAll側でのスムージングをオフにすることがあります。  
+「Settings > Animation Post Process > Smoothing on body」および「Smoothing on finger」「Smoothing on facial expression」で、体、指、表情へのスムージングのオンオフを設定できます。
 
-You can change the intensity of the smoothing.
+### スムージング強度の調整方法
 
-- Start the capture and observe the noise when standing upright without moving. If you want less noise, decrease the value of ***fc0***.  
-- Next, move your body at a speed which is appropriate for your purpose. If the captured motion cannot keep up with your body, increase the value of ***Beta***.
+- キャプチャを開始し、まず、体を動かさずまっすぐ立った時のノイズを観察します。ノイズが気になる場合は、***fc0***を減らします。
+- ノイズが十分抑えられたら、次に、キャプチャ目的に応じた適当な速さで体を動かします。動きに追随できていない場合は、***Beta***を増やします。
 
-!!! Question "How it works"
+!!! Question "スムージングのしくみ"
 
-    [One euro filter](http://cristal.univ-lille.fr/~casiez/1euro/) is used for the smoothing. One euro filter is simply "low-pass filter whose cutoff frequency increases in proportion to speed". Normal low-pass filter cannot keep up with quick movements when trying to suppress jitter. On the other hand, one euro filter can **loosen noise suppression only for quick movements** to ensure tracking for them, as well as suppressing noise at low speeds in the same way as normal low-pass filter.  
+    スムージングには[1€フィルタ](http://cristal.univ-lille.fr/~casiez/1euro/)を使用しています。1€フィルタとは、端的に表現すると「速さに比例してカットオフ周波数が増加するローパスフィルタ」です。通常のローパスフィルタは、ノイズを抑えようとすると機敏な動きへ追随することができなくなってしまいますが、1€フィルタでは、**機敏な動きに対してはノイズ抑制を緩くしてやることで、低速でのノイズを抑えつつ機敏な動きへの追従性も確保する**ことができます。
 
-    You can adjust the following 3 parameters:
+    下記の3つの項目を調整することができます。
 
-    - *fc0*: Cutoff frequency at speed is zero. **The smaller this value, the less noise at low speeds.**
-    - *Beta*: How much the cutoff frequency increases in proportion to the speed. **The higher this value, the quicker movement can be tracked.**
-    - *fcv*: Cutoff frequency for speed. For speed, a normal lowpass filter with the cutoff frequency specified by this value is applied.
+    - fc0: 速さゼロにおけるカットオフ周波数。**これが小さな値であるほど、低速でのノイズが抑制されます**。
+    - Beta: 速さに比例してカットオフ周波数がどれだけ増加するか。**これが大きな値であるほど、機敏な動きに追随できます**。
+    - fcv: 速さに対するカットオフ周波数。速さに対しては、この値で指定されるカットオフ周波数を持つ通常のローパスフィルタが適用されます。

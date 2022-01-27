@@ -1,26 +1,26 @@
-# Adjust scales
+# スケールの調整
 
 ![](../../images/Settings-Coordinates-Scales.png){ loading=lazy }
 
-Click `Start capture` at the top of the window and let the cameras to see your whole body to capture your motion.
-By observing the captured result, adjust the scales as shown below to animate the character properly.   
+ウィンドウ上部の「Start capture」をクリックし、二つ以上のカメラに全身を映すと、モーションがキャプチャされます。  
+キャプチャ結果を観察し、下記の通りスケールを適切に調整することで、キャラクターに動きが正しく反映されるようにしていきます。　
 
-!!! Info "VR users can skip this"
-    If you are using Virtual Motion Tracker and SteamVR, the scales will be adjusted in [Align coordinates of SteamVR and MocapForAll](../../../how-to-export/to-steamvr/#align-coordinates-of-steamvr-and-mocapforall) section described later, so you can skip this section.
+!!! Info "VRユーザはスキップ可能です"
+    Virtual Motion TrackerおよびVRアプリと組み合わせて使用する場合は、後述の[SteamVRとMocapForAllの座標合わせ](../../../how-to-export/to-steamvr/#steamvrmocapforall)でスケールも併せて調整するので、ここでの調整は適当でOKです。
 
-!!! Question "Why there are 2 scales"
-    Game characters generally have longer legs than real humans, so the scale is divided into ones for upper and lower body. (Therefore, the ratio of the upper body scale to the lower body scale depends on the character you want to apply.)
+!!! Question "なぜスケールが2つあるのか"
+    上半身と下半身でスケールを分けているのは、ゲームのキャラクターは一般に生身の人間より足が長いので、上半身と下半身を分けないと生身の人間のサイズと合わないからです。（そのため、上半身と下半身のスケールの比は適用したいキャラクターに依存します）
     
-## Lower body scale
+## 下半身のスケール
 
-Affects to pelvis, hips, knees, feet, as well as the root position of the whole movement.
+腰、股関節、膝、足の位置に影響します。また、体全体の位置（root位置）もこのスケールに従います。
 
-- If the character is always crunching, increase the value at `Settings > Coordinates > Scale > Lower body`.
-- If the character is floating in the air, decrease the value at `Settings > Coordinates > Scale > Lower body`.
+- キャラクターが常にしゃがんでいる場合： 「Settings > Coordinates > Scale > Lower body」の値を増やします。
+- キャラクターが宙に浮いている場合： 「Settings > Coordinates > Scale > Lower body」の値を減らします。
 
-## Upper body scale
+## 上半身のスケール
 
-Affects to chest, neck, head, shoulders, elbows, hands, fingers.
+胸、首、頭、肩、肘、手、指の位置に影響します。
 
-- If the character's shoulder is always facing down,  increase the value at `Settings > Coordinates > Scale > Upper body`.
-- If the character's shoulder is always facing up,  decrease the value at `Settings > Coordinates > Scale > Upper body`.
+- キャラクターの肩が常に下を向いている場合： 「Settings > Coordinates > Scale > Upper body」の値を増やします。
+- キャラクターの肩が常に上を向いている場合： 「Settings > Coordinates > Scale > Upper body」の値を減らします。

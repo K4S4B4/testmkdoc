@@ -40,7 +40,7 @@
 
 ### UE4, UE5, Unityへのデータ連携
 
-UnrealEngine4, UnrealEngine5, Unityへキャプチャ結果を送信し、ゲーム開発や映像製作に利用することができます。   
+Unreal Engine 4, Unreal Engine 5, Unityへキャプチャ結果を送信し、ゲーム開発や映像製作に利用することができます。   
 
 - VMTプロトコルを用いて、（Virtual Motion TrackerとSteamVRは使わずに）UE4, UE5, Unityへ直接データを連携するためのプラグインを[こちら](https://booth.pm/ja/items/3026430)で公開しています。
 - [VMCプロトコルによるアプリ連携](#vmcプロトコルによるアプリ連携)に記載の通り、VMCプロトコルを用いて、EVMC4UやVMC4UEによる連携も可能です。

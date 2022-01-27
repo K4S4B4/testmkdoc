@@ -24,7 +24,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](.
 
     When calibration is completed, extrinsic parameters and the camera position will be displayed, and it will shows `Extrinsic  ☑Calibrated`.  
  
-    If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly).
+    !!! Tip "If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly)."
 
     ![](../../images/Camera-Calibration-Extrinsic-Execution-Charuco.gif){ loading=lazy }
     
@@ -37,7 +37,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](.
     
     When calibration is completed, extrinsic parameters and the camera position will be displayed, and it will shows `Extrinsic  ☑Calibrated`.  
     
-    If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly).
+    !!! Tip "If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly)."
     
     ![](../../images/Camera-Calibration-Extrinsic-Execution-Aruco.gif){ loading=lazy }
    
@@ -50,8 +50,8 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](.
     - Click **`Start`** under `Camera > Calibration > Extrinsic`.
     
     When calibration is completed, extrinsic parameters and the camera position will be displayed, and it will shows `Extrinsic  ☑Calibrated`.  
-    
-    If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly).
+
+    !!! Tip "If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly)."
 
     ![](../../images/Camera-Calibration-Extrinsic-Execution-Diamond.gif){ loading=lazy }
 
@@ -68,7 +68,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](.
     ![](../../images/Camera-Calibration-Extrinsic-Execution-Human.gif){ loading=lazy }
 
 ### If the marker cannot be read properly
-!!! Tip "If the marker cannot be read properly"
+??? Tip "Method to place marker on the wall"
 
     Since the position of the marker will be the plane with zero height of the captured motion, it is basically recommended to place the marker on the floor, but it may be difficult to read the marker on the floor depending on the placement and specification of the camera.
 
@@ -86,7 +86,9 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](.
 If you have input the correct marker size in [Prepare markers](../prepare-markers/#measure-the-marker-size) section, you can see the position of the camera in the 3D viewport.  
 Use the WASD key and mouse drag to move the viewport on MocapForAll.  
 <img src="../../../images/App-wasd.png" alt="App-wasd" style="zoom:50%;" />  
-Note that the camera may appear below the floor (in this case, the calibration has failed).
+
+!!! Warning "Cameras may appear below the floor"
+    In this case, the calibration has failed.
 
 ## Save and load the results
 ![](../../images/Camera-Calibration-Save.gif){ loading=lazy }
@@ -97,5 +99,5 @@ After calibration is completed, save the calibration result of each camera by cl
 ### For all cameras
 You can save and load the whole camera setup by clicking **`Save All Cameras`** and **`Load All Cameras`** buttons.  
 
-!!! Warning
+!!! Warning "Caution when saving all camera settings"
     The camera selection is saved as the index inside the combo box. If you remove cameras from your PC, the order of the cameras in the combo box will change and you will not be able to load the cameras properly.

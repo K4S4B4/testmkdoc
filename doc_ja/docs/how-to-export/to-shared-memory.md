@@ -1,23 +1,19 @@
----
-title: Export to shared memory
----
+# 共有メモリへの出力
 
-# Export motion to shared memory
+キャプチャした体の動きと表情の生データを共有メモリに出力することができます。
 
-You can export bone transform and facial expression raw data to shared memory.
+## 出力の有効化
 
-## Settings to send data
+- 「Settings > Data export > Shared Memory > Export to shared memory」をオンにします。
 
-- Turn on `Settings > Data export > Shared Memory > Export to shared memory`
+!!! Info "出力先の共有メモリ名の変更"
+    「Settings > Data export > Shared Memory > Names of shared memories」に設定した名前の共有メモリに、データが書き出されます。
 
-!!! Info "Change the name of destination shared memory"
-    Data will be written to the shared memory of the name specified in `Settings > Data export > Shared Memory > Names of shared memories`
+## 出力データフォーマット
 
-## Format of output data
-
-- The first 1 byte is a counter that is incremented by 1 each time the data is updated (after 255, it returns to 0).
-- The next 4 bytes are the int type value which describes the length of the remaining data in bytes.
-- The rest are array of 4-byte float values.
+- 最初の1バイトは、データが更新される度に+1される（255の次は0に戻る）カウンタです。
+- 次の4バイトは、残りのデータのバイト単位での長さをint型で表した値です。
+- 残りは、4バイトのfloat型が繰り返されます。
 
 ### Body
 
@@ -25,24 +21,24 @@ You can export bone transform and facial expression raw data to shared memory.
 
 ### Hand
 
-The orientation and position of 15 bones are exported in the similar format as the Body data. The arrangement of bones is as follows.
+Bodyのデータと同様の形式で15個のボーンの向きと位置が出力されます。ボーンの並びは下記の通りです。
 
 ![](../../images/DataFormat-SharedMemory-Hand.png){ loading=lazy }
 
 ### Face
 
-Only positions (no rotations) are exported for 468 face landmarks. The position is represented by a three-dimensional value with the XY coordinates in pixels in the camera image cropped to the area of the face and the Z coordinate of the same scale in the depth direction.
+468個の顔のランドマークについて、位置情報のみが出力されます。位置は、顔の範囲にトリミングされたカメラ画像中でのピクセル単位でのXY座標に加え、それと同じスケールでの奥行方向の推定位置をZ座標とした3次元の値で表されます。
 
 ![](../../images/DataFormat-SharedMemory-Face1.png){ loading=lazy }
 
-Enlarge the image below to see where each landmark corresponds to your face.
+各ランドマークが顔のどこに対応するかは、下記画像を拡大して確認してください。
 
 ![](../../images/DataFormat-SharedMemory-Face.jpg){ loading=lazy }
 
 ### Eye
 
-In the same format as the Face data, the positions of 5 points for the iris and 71 points for the eyelid are exported.
+Faceのデータと同様の形式で、瞳について5点、まぶたについて71点の位置情報が出力されます。
 
-## Sample project
+## 共有メモリからの値の取得の実装例
 
-A sample project to read the transform data from shared memory with Unity and apply it to GameObjects is [available here](https://github.com/Akiya-Research-Institute/MocapForAll-SharedMemory-Plugin-for-Unity).
+共有メモリに書き込まれたデータをUnityで読み取りGameObjectに反映するサンプルプロジェクトを[こちらで公開しています。](https://github.com/Akiya-Research-Institute/MocapForAll-SharedMemory-Plugin-for-Unity)

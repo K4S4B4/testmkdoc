@@ -1,26 +1,21 @@
----
-title: Export to BVH files
----
-
-# Export motion to BVH files
+# BVH形式での書き出し
 
 ![](../../images/Settings-DataExport-BVH.gif){ loading=lazy }
 
-- Click `Stop capture`.
-- Drag and drop the VRM file into the MocapForAll window to load a VRM model.
-- Turn on `Settings > Data export > Record to BVH file`
-    - `Settings  > General > Character` will be automatically set to `VRM runtime load`
-- Click `Start capture` to start saving the data in BVH format.
-- Click `Stop capture` to generate the final BVH file.
-    - In the case of the free trial version, a BVH file will be automatically generated after 300 frames have passed, and data saving will be stopped.
+- キャプチャを停止します。
+- VRMファイルをMocapForAllのウィンドウにドラッグ&ドロップします。
+- 「Settings > Data export > Record to BVH file」を有効にします。
+- 「Start capture」をクリックすると、BVH形式でのデータ保存が開始されます。
+- 「Stop capture」をクリックすると、最終的なBVHファイルが生成されます。
+    - 無料試用版の場合は、300フレーム経過時点で自動的にBVHファイルが生成され、データ保存が停止されます。
 
-!!! Info "Bone structure is based on VRM"
-    After retargeting the animation to the VRM model on MocapForAll, the animation is exported in BVH format.  
-    Therefore, when exporting data in BVH format, it automatically switches to the mode that uses VRM.  
+!!! Info "ボーン構造はVRM準拠"
+    MocapForAll上でVRMモデルにアニメーションをリターゲットした上で、BVH形式でアニメーションをエクスポートするしくみとしています。  
+    そのため、BVH形式でのデータ書き出し時は、自動的にVRMを使用するモードに切り替わります。
 
-!!! Info "If you do not own VRM models"
-    Please select `VRM runtime load` in `Settings > General > Character` without actually loading a model.  
-    A dummy VRM model runs in background.  
+!!! Info "VRMモデルを持っていない場合"
+    VRMモデルをお持ちでない場合は、実際にモデルをロードせずに、「Settings > General > Character」で「VRM runtime load」を選択してください。  
+    ダミーのVRMモデルがバックグラウンドで使用されます。
 
-!!! Info "The unit of length is meters"
-    The unit of bone length in the generated BVH file is meters. Set the appropriate unit in the application which loads the BVH file.
+!!! Info "長さの単位はメートル"
+    生成されるBVHファイルのボーンの長さの単位はメートルとしています。読み込み先のアプリケーションで単位を適切に設定してください。
