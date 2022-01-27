@@ -34,7 +34,7 @@ theme:
   font:
     text: M PLUS 1
     code: M PLUS 1 Code
-  language: en
+  language: ja
   favicon: images/favicon.png
   logo: images/logo.png
   features:
@@ -60,7 +60,6 @@ extra:
       # link: /MocapForAll-Manual/ja/
       link: /testmkdoc/ja/
       lang: ja
-
   analytics:
     provider: google
     property: UA-2709176-10
@@ -82,3 +81,36 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.details
+
+nav:
+  - index.md
+  - インストール方法:
+    - how-to-install/install-mocapforall.md
+    - how-to-install/install-tensorrt.md
+  - キャプチャ方法:
+    - how-to-capture/get-cameras.md
+    - カメラ校正:
+      - how-to-capture/calibrate-cameras/what-is-camera-calibration.md
+      - how-to-capture/calibrate-cameras/prepare-markers.md
+      - how-to-capture/calibrate-cameras/connect-cameras.md
+      - how-to-capture/calibrate-cameras/execute-calibration.md
+    - 設定の調整:
+      - how-to-capture/adjust-settings/adjust-scales.md
+      - how-to-capture/adjust-settings/adjust-animation.md
+      - how-to-capture/adjust-settings/optimize-performance.md
+  - エクスポート方法:
+    - how-to-export/to-steamvr.md
+    - how-to-export/to-game-engines.md
+    - how-to-export/to-vmc-marionette.md
+    - how-to-export/to-bvh-files.md
+    - how-to-export/to-shared-memory.md
+  - その他の設定:
+    - other-settings/capture-hand-and-face.md
+    - other-settings/capture-from-recorded-video.md
+    - other-settings/index.md
+
+

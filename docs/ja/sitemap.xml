@@ -6,12 +6,97 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/what-is-mocapforall/</loc>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/</loc>
          <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/</loc>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-capture/get-cameras/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-capture/adjust-settings/adjust-animation/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-capture/adjust-settings/adjust-scales/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-capture/adjust-settings/optimize-performance/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-capture/calibrate-cameras/connect-cameras/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-capture/calibrate-cameras/execute-calibration/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-capture/calibrate-cameras/prepare-markers/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-capture/calibrate-cameras/what-is-camera-calibration/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-export/to-bvh-files/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-export/to-game-engines/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-export/to-shared-memory/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-export/to-steamvr/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-export/to-vmc-marionette/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-install/install-mocapforall/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/how-to-install/install-tensorrt/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/other-settings/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/other-settings/capture-from-recorded-video/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Akiya-Research-Institute.github.io/testmkdoc/other-settings/capture-hand-and-face/</loc>
          <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>

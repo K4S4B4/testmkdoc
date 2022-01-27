@@ -24,7 +24,7 @@ You can install from Steam or BOOTH.
 
     !!! Question "Appendix"
 
-        All [Appendix](../from-booth/#appendix-optional) are installed automatically.  
+        All **Appendix** are installed automatically.  
 
         ??? Question "Appendix features"
             Appendix is originally the feature separated from the main program.  

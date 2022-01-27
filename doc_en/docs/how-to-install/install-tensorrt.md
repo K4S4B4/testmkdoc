@@ -1,8 +1,3 @@
----
-title: Install TensorRT
-nav_order: 5
----
-
 # Install TensorRT
 
 !!! Info "You can skip this page"
