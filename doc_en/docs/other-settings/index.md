@@ -31,7 +31,7 @@ Example:
 
 ## Apply motion only to the upper body
 
-With the following settings, the motion will be applied only to the upper body of the character.
+With the following settings, the motion will be applied only to the upper body of the character.  
 - Turn off `Settings > General > Capture body > Apply to lower body`.
 
 The lower body stops at the position of the last frame, so adjust the relative position of the upper and lower body with `Settings> Coordinates` if necessary.  

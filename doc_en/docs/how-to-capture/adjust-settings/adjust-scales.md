@@ -6,7 +6,7 @@ Click `Start capture` at the top of the window and let the cameras to see your w
 By observing the captured result, adjust the scales as shown below to animate the character properly.   
 
 !!! Info "VR users can skip this"
-    If you are using Virtual Motion Tracker and SteamVR, the scales will be adjusted in [Align coordinates of SteamVR and MocapForAll](../../how-to-export/to-steamvr/#Align-coordinates-of-SteamVR-and-MocapForAll) section described later, so you can skip this section.
+    If you are using Virtual Motion Tracker and SteamVR, the scales will be adjusted in [Align coordinates of SteamVR and MocapForAll](../../../how-to-export/to-steamvr/#align-coordinates-of-steamvr-and-mocapforall) section described later, so you can skip this section.
 
 !!! Question "Why there are 2 scales"
     Game characters generally have longer legs than real humans, so the scale is divided into ones for upper and lower body. (Therefore, the ratio of the upper body scale to the lower body scale depends on the character you want to apply.)

@@ -1,5 +1,5 @@
 ---
-title: To SteamVR
+title: Export to SteamVR
 ---
 
 # Export motion to SteamVR

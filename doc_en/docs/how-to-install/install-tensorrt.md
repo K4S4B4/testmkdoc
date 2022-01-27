@@ -5,6 +5,9 @@ nav_order: 5
 
 # Install TensorRT
 
+!!! Info "You can skip this page"
+    If you are not going to use TensorRT, you can skip this page. 
+
 This section is only for enthusiasts who want to improve performance even by 1ms/frame.  
 (Using GTX1080Ti in our dev env, TensorRT has better performance than DirectML by 1ms/frame/camera in Precision mode, for example.)  
 Requires an Nvidia GPU that supports CUDA, cuDNN, and TensorRT.    

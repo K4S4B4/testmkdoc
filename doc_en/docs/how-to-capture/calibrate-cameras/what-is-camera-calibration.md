@@ -1,8 +1,8 @@
 # What is camera calibration?
 
-Camera calibration is the process of obtaining information about the relationship between **the positions in the camera image and the positions in the real world**. This section describes the concept of what you are doing with camera calibration and some tips for it.
+Camera calibration is the process of obtaining information about the relationship between **the positions in the camera image and the positions in the real world**. This page describes the concept of what you are doing with camera calibration and some tips for it.
 
-In camera calibration in MocapForAll, the following 2 types of information are obtained:
+MocapForAll obtains the following 2 types of information during camera calibration:
 
 - Intrinsic parameters (Characteristics of the camera itself)
 - Extrinsic parameters (Position of the camera in the real world)
@@ -36,7 +36,7 @@ In theory, once the camera is completely fixed in your room, it can be treated a
     ![](../../images/Camera-Calibration-Extrinsic-Geometry.png){ loading=lazy }
 
 ## 4 methods to get extrinsic parameters
-In MocapForAll, there are 4 methods to get extrinsic parameters. Please note that the preparation and execution procedures are different for each.
+In MocapForAll, there are 4 methods to get extrinsic parameters. Please note that the preparation and execution procedures are different for each as described later.
 
 |  Method  |  Accuracy  |  Ease of preparation  |  The size of the usable space  | 　Comment  |
 | ---- | ---- | ---- | ---- | ---- |

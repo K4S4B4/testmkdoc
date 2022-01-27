@@ -1,5 +1,5 @@
 ---
-title: To BVH files
+title: Export to BVH files
 ---
 
 # Export motion to BVH files

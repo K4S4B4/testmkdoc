@@ -1,5 +1,5 @@
 ---
-title: To VMC marionette
+title: Export to VMC marionette
 ---
 
 # Export motion to apps which accept VMC protocol

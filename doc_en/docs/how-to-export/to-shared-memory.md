@@ -1,5 +1,5 @@
 ---
-title: To shared memory
+title: Export to shared memory
 ---
 
 # Export motion to shared memory
