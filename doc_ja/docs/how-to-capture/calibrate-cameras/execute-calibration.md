@@ -93,10 +93,10 @@ MocapForAll上で視点を移動するには、キーボードのW・A・S・D�
 ## 結果の保存と読み込み
 ![](../../images/Camera-Calibration-Save.gif){ loading=lazy }
 
-### 各カメラ 
+### 各カメラで 
 カメラ校正が完了したら、「Camera > Calibration > Intrinsic」と「Extrinsic」の下の「Save」から、各カメラの校正結果を保存しておきます。保存した結果は「Load」から読み込むことができます。
 
-### 全カメラ
+### 全カメラまるごと
 ウィンドウ上部の「Save All Cameras」ボタンと「Load All Cameras」ボタンをクリックして、カメラ設定全体を保存およびロードできます。
 
 !!! Warning "全カメラ保存時の注意"
